@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Bruno Luiz Blog]]></description><link>http://brunoluiz.net/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 21:50:06 GMT</lastBuildDate><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[The Most Special Retail Market Date There is one big and very special date on the e-commerce and retail market and it’s called Black Friday…]]></description><link>http://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Bruno Luiz Blog]]></description><link>http://brunoluiz.net/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 22:23:42 GMT</lastBuildDate><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices…]]></description><link>http://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg&quot;
@@ -34,7 +34,6 @@
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h2&gt;The Most Special Retail Market Date&lt;/h2&gt;
 &lt;p&gt;There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices”, “sale!”, “50% off”, but for developers and IT people it is a challenging adventure.&lt;/p&gt;
 &lt;p&gt;To begin with, two weeks before, feature deployments are frozen and everything passes through load tests. On the week, machines are scaled up and, at the event’s day, all eyes are on metrics and logs.&lt;/p&gt;
 &lt;p&gt;But there is a catch in this whole story: the feature development can’t stop. This means features will begin to stack up soon after the feature deployment freeze and usually it continues a bit after the event, especially when your software is multi-tenant and each client has its own Black Friday agenda.&lt;/p&gt;
@@ -481,7 +480,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;
 &lt;p&gt;Vogels repo: &lt;a href=&quot;https://github.com/ryanfitz/vogels&quot;&gt;https://github.com/ryanfitz/vogels&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Still using GitFlow? What about a simpler alternative?]]></title><description><![CDATA[Alternative on sight… GitFlow is a branching model created by Vincent Driessen on 2010 ( original article ). Since it was published, many…]]></description><link>http://brunoluiz.net/blog/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</guid><pubDate>Tue, 18 Jul 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Still using GitFlow? What about a simpler alternative?]]></title><description><![CDATA[GitFlow is a branching model created by Vincent Driessen on 2010 ( original article ). Since it was published, many companies had tested and…]]></description><link>http://brunoluiz.net/blog/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</guid><pubDate>Tue, 18 Jul 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg&quot;
@@ -501,7 +500,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;header&quot;
+        alt=&quot;Alternative on sight&quot;
         title=&quot;&quot;
         src=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg&quot;
         srcset=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/f39eb/header.jpeg 180w,
@@ -516,7 +515,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   &lt;/span&gt;
   
   &lt;/a&gt;
-    Alternative on sight…&lt;/p&gt;
+    &lt;/p&gt;
 &lt;p&gt;GitFlow is a branching model created by Vincent Driessen on 2010 (&lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;original article&lt;/a&gt;). Since it was published, many companies had tested and implemented it, which allows us to have many reviews about how well (or not) it works. After some discussions within our team, we decided to not go with GitFlow, but use a simpler model instead, together with a tightly defined workflow. Some of the discussed reasons of why not go with GitFlow are the same written on &lt;a href=&quot;http://endoflineblog.com/gitflow-considered-harmful&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;The Feature Branch Model&lt;/h2&gt;
 &lt;p&gt;Compared to GitFlow, it is easier to implement and does not require any plugins to be properly used. The step-by-step of this model would be:&lt;/p&gt;
@@ -645,7 +644,40 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/ul&gt;
 &lt;p&gt;Usually, these version gaps occur when the producing capacity is higher than the testing capacity (developers x testers ratio).&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The model is still being tested but, until now, it has been working well. The only faced drawbacks were the ones pointed on the session above.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Are you using git push force? Oh mate, you are doing it wrong!]]></title><description><![CDATA[You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or…]]></description><link>http://brunoluiz.net/blog/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</guid><pubDate>Sat, 03 Jun 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;&amp;#x27;header.png&amp;#x27;&quot; alt=&quot;Git branching&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The model is still being tested but, until now, it has been working well. The only faced drawbacks were the ones pointed on the session above.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Are you using git push force? Oh mate, you are doing it wrong!]]></title><description><![CDATA[You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or…]]></description><link>http://brunoluiz.net/blog/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</guid><pubDate>Sat, 03 Jun 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 64.52442159383034%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAC7ElEQVQ4y41Ta0hTYRh+d7wVBUGQhV3MyiiFLnYRSQgTISpI0Gbaj4JQMwuV1IjR0LLAyhzoHOZlmZuRWohGoqRky5VzM7wxzcvcpu5ydnU7uyju62x60kDKFw7f85zvPc/38bzPAfOc8abBbJA4CGsiLJcOV2MOh41GcZvNCgWMLFhXGY0ql805hyZkUsStq4hOAsCovUFxFxZ1MtSDS57nr090zjDLVKkmrMMNZcaBjLgI97sFwhqGkCuE6hmQiIDkHkwQFph32v8teqimLq8p42osOuHLIHjFpSqTjtBqVcTYoCiF3PZGCHlujWumvdwryaGKXQiPGffWFsRYFUzIRN4e/9rrWYuLBLJb1UjQ3faW6iFFaJQYVWtaYLLoM0ZUs1pcp85a+dgWjwua+C76kUKUcPAATphLjSaD2GrQxlCiR8nVbreB02GnUXYszDsAZnRTaN5pRvLJUZRSzkuFvEdhkPMwGHILA69fOHPxc/5toQsRyEEObkgqUaYlJ+1BuYnYF1nPnxTIx4ex2sri5SlrZHc0M1OK7+1PNXT2jUYoak6GF7zUwFd8RlDjpyfwsuqKSqPgKEfEtqEyZlc5gM8qG7zIZzfF62vYS0D4U7FFVAYBCi5k6rmQjrfCzgnj5HuXxYQjszbN3SMVtmyzn/WPIy4dZC2e3x9JqmE9ammzXo8vGHRq5rG9ywepZ2ex1Z52l0DEtw+nePzpTtQl60XD4i4jMzc9nE6P9/MMLSl8hyMqIFubFVtRLf242CH7gUb7BIaigvvnsu/e2kweFAOjkw4Q8UNo0o5rnlhYLGi7Dp+yaAwy1Cdo0HRwtrJ7q72LJJW0Z6JayBfWwgNpWXCLXj5o1VmUSCJsnSzksPalRUd6QW8VgLgaoO/10g2VnQkeUatZe1w51s/52sY77eYj7zb69XAxv/4S7w2/OEGbPAlxmkJnxgc48pyEN/NhvkF/xcctumK25b9/GNq1kkcS+RgvH/Z3498UIZyNb70hSwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Git branching&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png&quot;
+        srcset=&quot;/blog/static/620d3f100a056fc03663181b22d8cbbd/e6885/header.png 180w,
+/blog/static/620d3f100a056fc03663181b22d8cbbd/e17e9/header.png 360w,
+/blog/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png 720w,
+/blog/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png 778w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or development branch, done your commits, pushed this feature branch to the remote and opened a push request for peer review.&lt;/p&gt;
 &lt;p&gt;In ideal cases, you will be able to just squash and merge after some reviews and fixes. But, the world is not ideal (as you might know), and maybe one of your mates modified the same files and already merged it. So, surprise surprise, you got a merge conflict to resolve!&lt;/p&gt;
 &lt;p&gt;This usually means you will need to do a &lt;em&gt;git rebase&lt;/em&gt; before merging. After doing it, this new rebased branch need to be pushed back to the remote. And here is one of the steps that people usually do wrong:&lt;/p&gt;
