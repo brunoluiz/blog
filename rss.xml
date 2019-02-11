@@ -1,11 +1,657 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Bruno Luiz Blog]]></description><link>http://brunoluiz.net/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 19:37:24 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi…]]></description><link>http://brunoluiz.net/blog/2019/jan/hello-world/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2019/jan/hello-world/</guid><pubDate>Sun, 03 Feb 2019 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Eget arcu dictum varius duis at consectetur lorem donec massa. Nunc mi ipsum faucibus vitae aliquet. Iaculis nunc sed augue lacus viverra vitae. Et netus et malesuada fames ac turpis. Amet justo donec enim diam vulputate ut pharetra sit. Duis tristique sollicitudin nibh sit amet commodo nulla. Lobortis scelerisque fermentum dui faucibus. Vel pharetra vel turpis nunc eget lorem. Risus sed vulputate odio ut.&lt;/p&gt;
-&lt;p&gt;Mattis rhoncus urna neque viverra justo nec ultrices. Libero id faucibus nisl tincidunt eget. Sed cras ornare arcu dui vivamus arcu felis bibendum. Blandit turpis cursus in hac. Eu facilisis sed odio morbi quis commodo odio. Augue lacus viverra vitae congue eu consequat. Non arcu risus quis varius. Ipsum dolor sit amet consectetur adipiscing. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. In est ante in nibh mauris cursus mattis molestie. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Semper viverra nam libero justo laoreet sit amet cursus. Nulla pellentesque dignissim enim sit. Dui sapien eget mi proin sed libero.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; CodePlugin &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;typography-plugin-code&apos;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sternGroveTheme &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;typography-theme-stern-grove&apos;&lt;/span&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Bruno Luiz Blog]]></description><link>http://brunoluiz.net/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 21:50:06 GMT</lastBuildDate><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[The Most Special Retail Market Date There is one big and very special date on the e-commerce and retail market and it’s called Black Friday…]]></description><link>http://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.7%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABTouS6kB//8QAGhAAAwEAAwAAAAAAAAAAAAAAAAERAgMSIv/aAAgBAQABBQLyk6iGtQXJX2P/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAbEAABBQEBAAAAAAAAAAAAAAABABARITECcf/aAAgBAQAGPwIwL9WAquYbG//EABoQAQADAQEBAAAAAAAAAAAAAAEAETEhcaH/2gAIAQEAAT8hPqJZFrd7QsbUoPYuLidDLBP/2gAMAwEAAgADAAAAENjf/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAIAQMBAT8QV//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/EFf/xAAcEAEBAAIDAQEAAAAAAAAAAAABEQAxIVGxYXH/2gAIAQEAAT8QBipsfyENc85U4ShcLot2YVgChT7jUQoaesMUvar7gQFA+uf/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by rawpixel.com on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg&quot;
+        srcset=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/f39eb/header.jpeg 180w,
+/blog/static/a11126f471486b2d157de21ec1b44740/e1b9c/header.jpeg 360w,
+/blog/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg 720w,
+/blog/static/a11126f471486b2d157de21ec1b44740/deb56/header.jpeg 1080w,
+/blog/static/a11126f471486b2d157de21ec1b44740/cf22f/header.jpeg 1440w,
+/blog/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg 2000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;The Most Special Retail Market Date&lt;/h2&gt;
+&lt;p&gt;There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices”, “sale!”, “50% off”, but for developers and IT people it is a challenging adventure.&lt;/p&gt;
+&lt;p&gt;To begin with, two weeks before, feature deployments are frozen and everything passes through load tests. On the week, machines are scaled up and, at the event’s day, all eyes are on metrics and logs.&lt;/p&gt;
+&lt;p&gt;But there is a catch in this whole story: the feature development can’t stop. This means features will begin to stack up soon after the feature deployment freeze and usually it continues a bit after the event, especially when your software is multi-tenant and each client has its own Black Friday agenda.&lt;/p&gt;
+&lt;p&gt;In the case which gave this article its title, the deploy was delayed until close Christmas and, as it was Christmas, the team preferred to not deploy until the next year.&lt;/p&gt;
+&lt;p&gt;January came by and, at some point, the delayed deploys would have to start. As four sprints have been passed since Black Friday, the usual process would be to deploy each sprint package atomically, monitoring its results in the production environment. But this, this is not an ideal world.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.725%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABAv/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAEukVNdQY//xAAbEAEAAQUBAAAAAAAAAAAAAAACAQADERITBP/aAAgBAQABBQLSMu3GuFFdUXPoTHRxX//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAMAAwEBAAAAAAAAAAAAAAABEQISQSGR/9oACAEBAAY/Ase3o3q6nPSNv4b9MllCbM//xAAbEAACAgMBAAAAAAAAAAAAAAABEQAhMUFhUf/aAAgBAQABPyGrBJULYXg1AlVw1GFcHWhMYgn5B5JyABFjs//aAAwDAQACAAMAAAAQYN//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAEDAQE/EAtOX//EABcRAAMBAAAAAAAAAAAAAAAAAAABEVH/2gAIAQIBAT8QdI9P/8QAGhABAQEBAQEBAAAAAAAAAAAAAREhAEExgf/aAAgBAQABPxBOsNAWnhsSaec9DdBjH5DzOoDAkWeb70Bv6XD+cmojIkabx4bAB4d//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by rawpixel.com on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg&quot;
+        srcset=&quot;/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/f39eb/surprises.jpeg 180w,
+/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/e1b9c/surprises.jpeg 360w,
+/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg 720w,
+/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/deb56/surprises.jpeg 1080w,
+/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/cf22f/surprises.jpeg 1440w,
+/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/54366/surprises.jpeg 2160w,
+/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg 4000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Product Development Life Is Full Of Surprises&lt;/h2&gt;
+&lt;p&gt;When a product is just in its early days, the first clients are tech early adopters and the development team have to be close to them, as their inputs are valuable.&lt;/p&gt;
+&lt;p&gt;At some day in January, one of the major platform’s clients informed they would launch more shops on the system. Besides the fact that, usually, some preparation is required, the biggest issue was that a specific feature was required. It had been developed at some point, but it was not well tested yet.&lt;/p&gt;
+&lt;p&gt;Even worse, this feature depended on others, implemented in late November and early December, which means “Goodbye atomic deploys”: the team will have to prepare a deploy package with all four sprint features. Dangerous, isn’t it? Remember the &lt;em&gt;challenging adventure&lt;/em&gt; part?&lt;/p&gt;
+&lt;p&gt;While finishing and polishing the required feature, the QA team had to work deliberately to test all features again to be sure that everything would be pretty smooth. Even those which were already tested as, since November, some hotfixes were made on the production environment and who knows if they could have affected one of the already tested features.&lt;/p&gt;
+&lt;p&gt;With the feature finished, the QA and management teams got together to test it. After a period of tests, they confirmed it was working as expected, with no bugs or business rules flaws. Even though this surprise feature made us work insanely, the deploy looked like it would be a walk in the park.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABQzabXJxj/8QAGRAAAwEBAQAAAAAAAAAAAAAAAQIDABIR/9oACAEBAAEFApOHBnucr+E2fkUI3//EABYRAQEBAAAAAAAAAAAAAAAAAAAREv/aAAgBAwEBPwGVl//EABYRAQEBAAAAAAAAAAAAAAAAAAASEf/aAAgBAgEBPwGsU//EABkQAAIDAQAAAAAAAAAAAAAAABAxAAECEf/aAAgBAQAGPwLm3LLH/8QAHRABAAIABwAAAAAAAAAAAAAAAQARITFBUWFx8f/aAAgBAQABPyFt0kJhoyN5XyPZU4Q6QCgJ/9oADAMBAAIAAwAAABB4P//EABYRAQEBAAAAAAAAAAAAAAAAAAARMf/aAAgBAwEBPxCdKf/EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQIBAT8QrAlP/8QAGRABAQEBAQEAAAAAAAAAAAAAAREAIXFR/9oACAEBAAE/EEK4MRdCdUSGgtF+KJoAb7rHUY8d9+4bB83/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by SpaceX on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg&quot;
+        srcset=&quot;/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/f39eb/deploy.jpeg 180w,
+/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/e1b9c/deploy.jpeg 360w,
+/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg 720w,
+/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/deb56/deploy.jpeg 1080w,
+/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/cf22f/deploy.jpeg 1440w,
+/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/54366/deploy.jpeg 2160w,
+/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg 3000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;D(eploy)-Day&lt;/h2&gt;
+&lt;p&gt;It was 2 am when the whole deploy started. Low traffic and not that many orders flooding the system made it the perfect time to deploy the application. While deploying it, everything seemed fine, even though minor adjustments and migrations were needed. As soon as the clock hit 3h30 am, the team members were already wishing “Good Night” to each other.&lt;/p&gt;
+&lt;p&gt;For a package with a lot of features and one quite critical, it was quite smooth… and this is when things started to fall apart. At 4 pm, one of the clients started to complain about some orders not being registered due to HTTP 400 errors and some inventory not being updated for no reason. &lt;em&gt;“WHAT THE F&lt;/em&gt;CK IS GOING ON!” *everybody said, in despair.&lt;/p&gt;
+&lt;p&gt;All developers stopped to investigate the problem and, of course, hidden in the middle of one of the sprint release packages, there were two bugs: one related to how the application dealt with the inventory queue producer and the other related to how addresses were validated. Ten lines of code worth of trouble.&lt;/p&gt;
+&lt;p&gt;After roughly one hour of stress, everything was calm again, but the results of this deploy changed the entire team.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.64999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAE264WSA//EABsQAAICAwEAAAAAAAAAAAAAAAIRAQMABBIx/9oACAEBAAEFAqunVTImXD1/HklL/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAAAECESEQ/9oACAEBAAY/ApK8ZbNG+//EABwQAQACAgMBAAAAAAAAAAAAAAEAETFBIVFhsf/aAAgBAQABPyEIFieemA1s37FmFz7FTCG0n//aAAwDAQACAAMAAAAQy+//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAsv/xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAIAQIBAT8QVtv/xAAbEAEBAAMAAwAAAAAAAAAAAAABEQAhMWFxof/aAAgBAQABPxCajxfomTitgcbcKLgql4w0ZY2c39zmlQdnjP/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Dustin Lee on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg&quot;
+        srcset=&quot;/blog/static/69f917759485c550e5d50f8fe92e3f1e/f39eb/postmortem.jpeg 180w,
+/blog/static/69f917759485c550e5d50f8fe92e3f1e/e1b9c/postmortem.jpeg 360w,
+/blog/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg 720w,
+/blog/static/69f917759485c550e5d50f8fe92e3f1e/deb56/postmortem.jpeg 1080w,
+/blog/static/69f917759485c550e5d50f8fe92e3f1e/cf22f/postmortem.jpeg 1440w,
+/blog/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg 2000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;THAT Post-Mortem And Its Results&lt;/h2&gt;
+&lt;p&gt;Soon after, a post-mortem had been written. Everybody collaborated: developers, managers, and QAs. The information contained in this single document would allow the team to learn, grow and know better how to deal with problems like this in the future.&lt;/p&gt;
+&lt;p&gt;At the other day, a morning meeting was scheduled to discuss the points written in the post-mortem. Besides the issues from the deploy itself, many other problems arose in the heat of the discussion. All members agreed on the pointed issues and suggested some actions to tackle them.&lt;/p&gt;
+&lt;h3&gt;Deploy age&lt;/h3&gt;
+&lt;p&gt;One could point to the code and say it was a bug, but it was not only that. Deploys that are too many weeks old are a problem, as it has features developed way too long ago, where devs and testers probably don’t remember all specifics for these. This can lead to database issues (if a migration was forgotten), schema validation problems, business rules flaws, and so on.&lt;/p&gt;
+&lt;p&gt;The best way to tackle this is to deploy the feature package not too long after the sprint has been finished. Everything will be fresh for all team members and no git gimmicks will be required for this (rebase hell mostly).&lt;/p&gt;
+&lt;h3&gt;Rushed deploys&lt;/h3&gt;
+&lt;p&gt;Never do rush deploys, especially big ones. The team will get stressed, communication probably will not be the best, documents (such as the release notes) can have errors or miss information. In this deploy, one of the features was not specified on the JIRA Release Board, but it was on the GitHub release. A developer with more time would have noticed that some stuff was missing.&lt;/p&gt;
+&lt;p&gt;These release notes usually will not only be used by the clients, but by the QAs as well, as it will have which features will be deployed. As these have impacts on everybody, the best thing to do is to have a consensus on what can be fully delivered (developer side) and well tested (QA side). The idea is to avoid features which can have bugs or not well tested because they were made in a rush.&lt;/p&gt;
+&lt;h3&gt;Create Processes&lt;/h3&gt;
+&lt;p&gt;Usually, people love to complain about “processes”. Some people even say they love startups because of the lack of them. But they exist for a reason and, in this case, it would have helped if everything followed a well-defined process.&lt;/p&gt;
+&lt;p&gt;There was already a process, but it was not that specific. After the incident, the team got together and wrote a document describing each step of the product feature development, with a pipe of what should be done on each step of it: feature discussions and development, peer reviews metrics, deploy and release notes for tests environments, test processes and finally, the production deploy.&lt;/p&gt;
+&lt;p&gt;Is it more bureaucratic? For sure! But until now, there were no complains by the team members and, especially, the client.&lt;/p&gt;
+&lt;h3&gt;More Automated Tests&lt;/h3&gt;
+&lt;p&gt;Each sprint feature package is tested by QAs in a staging environment. The best scenario is to have a lot of different automated test scenarios, which would give 100% guarantee that nothing will break the APIs.&lt;/p&gt;
+&lt;p&gt;But, this isn’t a perfect world. The usual is to have part of it automated and part of it is tested by humans. But, as this aging deploy was urgent and made in a rush, some features passed through without being well tested.&lt;/p&gt;
+&lt;p&gt;How to solve this problem? Well, one side of the problem is organization: a board tool would help with this but, as aging deploys such as this one have too many tasks, the best thing to do is organize THAT release note. The QA team will be able then to plan how to do its tests.&lt;/p&gt;
+&lt;p&gt;The other side, which is a bit more complicated, is to create more automated tests. Not only QAs but developers as well. Everybody knows someone who wants to skip the test development, but this can help to avoid countless problems (especially in the future). The other developers should not allow a feature to go on without automated tests for it. The same applies for QAs.&lt;/p&gt;
+&lt;h3&gt;Error Metrics Monitoring and Alerts&lt;/h3&gt;
+&lt;p&gt;Soon after the deploy, the team has checked some error metrics on &lt;a href=&quot;https://www.graylog.org&quot;&gt;Graylog&lt;/a&gt; and &lt;a href=&quot;https://aws.amazon.com/cloudwatch/&quot;&gt;CloudWatch&lt;/a&gt;, but these error metrics were just for a part of the system, not its whole. If more metrics had been monitored, probably the problem would have been discovered way before and the impact would have been smaller.&lt;/p&gt;
+&lt;p&gt;The team should monitor at least some of these metrics manually, through dashboards or even the application log, but the best way to tackle this is through automated alerts. Nowadays, all major IaaS providers have a service for metrics and logs. With CloudWatch (AWS), the team can set alerts for when too many error HTTP responses are given by the applications on a certain determined period. It can send e-mails, SMS and even be integrated with mobile apps such as &lt;a href=&quot;https://www.opsgenie.com/&quot;&gt;OpsGenie&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are other tools besides these, such as &lt;a href=&quot;https://newrelic.com/&quot;&gt;NewRelic&lt;/a&gt; and &lt;a href=&quot;https://www.librato.com/&quot;&gt;Librato&lt;/a&gt;, but they are a bit more specific and the team should analyze if they are really required.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.64999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAG95JcOYg//xAAaEAADAAMBAAAAAAAAAAAAAAAAAQIDBBIh/9oACAEBAAEFApg5HPs0x5qQ9iz/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8Byj//xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQIBAT8B0r//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAADAQEBAAAAAAAAAAAAAAAAARExIZH/2gAIAQEAAT8hNThfoS0uRIv1eH//2gAMAwEAAgADAAAAEIMf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EAFm/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/EK1b/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAITFRQWFx/9oACAEBAAE/EKRUVa6PMtgD8iYE60oJCh1MHF//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Kupono Kuwamura on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg&quot;
+        srcset=&quot;/blog/static/4c7cb5c043852f9237594a41551e399f/f39eb/noproblems.jpeg 180w,
+/blog/static/4c7cb5c043852f9237594a41551e399f/e1b9c/noproblems.jpeg 360w,
+/blog/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg 720w,
+/blog/static/4c7cb5c043852f9237594a41551e399f/deb56/noproblems.jpeg 1080w,
+/blog/static/4c7cb5c043852f9237594a41551e399f/cf22f/noproblems.jpeg 1440w,
+/blog/static/4c7cb5c043852f9237594a41551e399f/54366/noproblems.jpeg 2160w,
+/blog/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg 4000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;End Of Problems?&lt;/h2&gt;
+&lt;p&gt;This will not be the last problem the team will have to struggle with. Stressful moments like these will appear but this is when the team will learn and grow, being able to rise and aim towards high stakes through time.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Joi: validate input and define databases in JavaScript]]></title><description><![CDATA[As the saying goes:  never trust user input . People coming from PHP and Java have many validation libraries available. But what about…]]></description><link>http://brunoluiz.net/blog/2017/aug/joi-validate-input-and-define-databases-in-javascript/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/aug/joi-validate-input-and-define-databases-in-javascript/</guid><pubDate>Wed, 30 Aug 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABNXy6hGHj/8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAwQSExQj/9oACAEBAAEFAhMXWtFtRgOOuD2XqtP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAADAQADAAAAAAAAAAAAAAAAAQIhESJB/9oACAEBAAY/AiqrEcqkdkPxGWj/xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhMUFx/9oACAEBAAE/IYujPfTrMuhR0ZKz+RHwH//aAAwDAQACAAMAAAAQs8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEBAAIBBQAAAAAAAAAAAAABEQAhMUFRgaGx/9oACAEBAAE/ECo0uCEQkLTcwRYd2J4wiU5wlfesJfXgbR6Nz6oEz//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Rayi Christian Wicaksono&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg&quot;
+        srcset=&quot;/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/f39eb/header.jpeg 180w,
+/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/e1b9c/header.jpeg 360w,
+/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg 720w,
+/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/deb56/header.jpeg 1080w,
+/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/cf22f/header.jpeg 1440w,
+/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg 1600w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;As the saying goes: &lt;em&gt;never trust user input&lt;/em&gt;. People coming from PHP and Java have many validation libraries available. But what about JavaScript? There are some options, but none seems more interesting than Joi.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/hapijs/joi&quot;&gt;Joi&lt;/a&gt; is maintained by &lt;a href=&quot;https://hapijs.com/&quot;&gt;Hapi.js project&lt;/a&gt;. Even though hapi.js is a web framework by itself, Joi is independent and can be used in any type of node project. This is great for people using express or restify, for example.&lt;/p&gt;
+&lt;p&gt;What makes it even more interesting is that, besides user validation, it can be used to define database schemas as well. This post will introduce a quick start guide, with some usage cases and general tweaks.&lt;/p&gt;
+&lt;h2&gt;How to use it?&lt;/h2&gt;
+&lt;p&gt;First things first: it has to be installed on the project. Considering an already initiated node project, the command to install it is: npm install joi. After being installed, a schema is required to use it, such as the file &lt;code&gt;rating-schema.js&lt;/code&gt; below:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// rating-schema.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Joi &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;joi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-sternGroveTheme&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;plugins &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;CodePlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This defines a model where an username, a rating (from 1 to 5) and an email (which is a required field) are expected. This is a simple example, but there are way more validation options, which can be found on the &lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md&quot;&gt;API reference&lt;/a&gt;. To use the defined schema, consider a file called &lt;code&gt;rating-test.js&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// rating-test.js&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; typography &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Typography&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sternGroveTheme&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Mattis rhoncus urna neque viverra justo nec ultrices. Libero id faucibus nisl tincidunt eget. Sed cras ornare arcu dui vivamus arcu felis bibendum. Blandit turpis cursus in hac. Eu facilisis sed odio morbi quis commodo odio. Augue lacus viverra vitae congue eu consequat. Non arcu risus quis varius. Ipsum dolor sit amet consectetur adipiscing. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. In est ante in nibh mauris cursus mattis molestie. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Semper viverra nam libero justo laoreet sit amet cursus. Nulla pellentesque dignissim enim sit. Dui sapien eget mi proin sed libero.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./rating-schema&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+  username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;brunoluiz&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;contact@brunoluiz.net&apos;&lt;/span&gt; 
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// result.error will be null&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// result.error will show an error due to missing e-mail&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; resultWithError &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+  username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;brunoluiz&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;resultWithError&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// result.error will have an error message&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md#errors&quot;&gt;More about Joi errors&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Real project usage&lt;/h2&gt;
+&lt;h3&gt;Validation middleware&lt;/h3&gt;
+&lt;p&gt;In a real project, Joi can be used on a middleware layer. On &lt;a href=&quot;http://expressjs.com&quot;&gt;&lt;code&gt;express&lt;/code&gt;&lt;/a&gt;, for example, this can be done using:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ratings-validor.js&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; next&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; ratings &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Ratings&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ratings&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ratings&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  req&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parsed &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ratings&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ....&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// routes.js&lt;/span&gt;
+
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/ratings&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  ratingsValidator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  ratingsCreateController
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this case, if the &lt;code&gt;ratingsValidator&lt;/code&gt; returns an error due to validation, express will stop the request before even reaching the controller.&lt;/p&gt;
+&lt;h3&gt;Database schema (MongoDB and DynamoDB)&lt;/h3&gt;
+&lt;p&gt;Some tools can use it to define their database schema (keep in mind that Joi is not an ORM). For MongoDB, &lt;code&gt;mongoose&lt;/code&gt; can be used together with &lt;a href=&quot;https://github.com/yoitsro/joigoose&quot;&gt;&lt;code&gt;joigoose&lt;/code&gt;&lt;/a&gt;, which easily converts a Joi schema. For example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// rating.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mongoose &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;mongoose&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; joigoose &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;joigoose&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mongoose&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Require the &apos;ratings&apos; schema&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./rating-schema&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Convert joi to mongoose schema&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mongooseSchema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; joigoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Modify some fields with database specific instructions &lt;/span&gt;
+mongooseSchema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;unique &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Add fields which don&apos;t make sense on the schema validator&lt;/span&gt;
+mongooseSchema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;updatedAt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;now &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+mongooseSchema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;createdAt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;now &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Define mongoose model&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Ratings &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mongoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Ratings&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; mongooseSchema&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Ratings&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Through &lt;a href=&quot;https://github.com/ryanfitz/vogels&quot;&gt;&lt;code&gt;vogels&lt;/code&gt;&lt;/a&gt;, the same can be done in projects using DynamoDB. By default, it accepts Joi as its schema definition. The following example is based on &lt;code&gt;vogels&lt;/code&gt; documentation:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// blog-post-schema.js&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  content&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  tags&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; vogels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;types&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringSet&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// blog-post.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./blog-post-schema.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; vogels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;BlogPost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  hashKey&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;email&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  rangeKey&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ‘title’&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  schema
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Exchangeability for front-end validation&lt;/h3&gt;
+&lt;p&gt;Some developers prefer to define the schema once and then use everywhere, including on browsers. Today &lt;a href=&quot;https://github.com/hapijs/joi/#browsers&quot;&gt;Joi doesn’t support browser usage&lt;/a&gt;, but a package called &lt;a href=&quot;https://github.com/jeffbski/joi-browser&quot;&gt;&lt;code&gt;joi-browser&lt;/code&gt; does this job&lt;/a&gt;, enabling the usage of exactly the same schema on the front-end as well.&lt;/p&gt;
+&lt;h2&gt;Useful tweaks&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBP/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAHKyUYkjCf/xAAaEAADAQADAAAAAAAAAAAAAAABAgMAERIi/9oACAEBAAEFAlnyDAYx03Kv280oQ3//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABkQAAIDAQAAAAAAAAAAAAAAAAAxEBIhYf/aAAgBAQAGPwKGVfRGH//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExYaH/2gAIAQEAAT8h9yJ6Uyhz4jF8Q6KMiUpU/9oADAMBAAIAAwAAABAQ/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAREP/aAAgBAwEBPxBJ/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Qi3//xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhUWExgcH/2gAIAQEAAT8QI3EYJeGGOph7FIVDXg+9wFAslbpCUQRsv7P/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by chuttersnap on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg&quot;
+        srcset=&quot;/blog/static/7711ddf8c0852584701f24f93b2988d7/f39eb/tweaking.jpeg 180w,
+/blog/static/7711ddf8c0852584701f24f93b2988d7/e1b9c/tweaking.jpeg 360w,
+/blog/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg 720w,
+/blog/static/7711ddf8c0852584701f24f93b2988d7/deb56/tweaking.jpeg 1080w,
+/blog/static/7711ddf8c0852584701f24f93b2988d7/cf22f/tweaking.jpeg 1440w,
+/blog/static/7711ddf8c0852584701f24f93b2988d7/54366/tweaking.jpeg 2160w,
+/blog/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg 4000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;#1 Disable Joi number() convert&lt;/h3&gt;
+&lt;p&gt;By default, Joi allows users to pass numbers formatted as strings, in cases of number() fields. This is specially bad if the validate() result is only used to check if there was an error, but not for it’s value field. To solve this, there are two possible solutions&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On &lt;code&gt;schema.validate(value)&lt;/code&gt;, an extra parameter can be passed to disable it, as: &lt;code&gt;schema.validate(value, { convert: false })&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Put a &lt;code&gt;strict()&lt;/code&gt; at the end of the desired number field, as: &lt;code&gt;Joi.number().strict()&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Both of them are quite annoying, because either all fields or all function calls require a specific config. One way to solve this is by extending Joi…&lt;/p&gt;
+&lt;h3&gt;#2 Extend Joi defaults&lt;/h3&gt;
+&lt;p&gt;In cases such as the above, or for new field types, or even when the behavior of a default field has to be changed, &lt;code&gt;Joi.extend()&lt;/code&gt; can be an option.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// joi.js&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Joi &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;joi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; ukzip &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/^[A-Z]{1,2}[0-9]{1,2}[A-Z]{0,1} ?[0-9][A-Z]{2}$/i&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;strict&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zipcode&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ukzip&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;UK Zipcode&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When using Joi through this file, all number fields will be on the strict mode — which solves the issue of applying tweak #1 everywhere — and a &lt;code&gt;zipcode()&lt;/code&gt; validator is created, based on a pre-defined regex.&lt;/p&gt;
+&lt;p&gt;More rules can be added and, actually, the Joi API enables &lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md#extendextension&quot;&gt;much more customisation&lt;/a&gt; on &lt;code&gt;Joi.extend&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;#3 Create default fields&lt;/h3&gt;
+&lt;p&gt;In some projects, a lot of models will have some default fields, such as an &lt;code&gt;extensionAttributes&lt;/code&gt;, where custom vendor data will be put into (as Magento already does) or &lt;code&gt;updatedAt&lt;/code&gt;. In these cases, the &lt;code&gt;Joi.object&lt;/code&gt; can be extended to include default fields:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// joi.js&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Joi &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;joi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;object&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+    extensionAttributes&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    updatedAt&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;now&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;#4 Show all validation errors&lt;/h3&gt;
+&lt;p&gt;Usually Joi validation dies on the first error, returning on it’s message which field failed. This is an issue when an input have many fields with problems. The user will have to do many requests to discover all problematic fields. To fix this issue, the following option can be added on the function call:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;const result = schema.validate(value, { abortEarly: false })&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;With this config, if an error occurs, the &lt;code&gt;result.error&lt;/code&gt; will return all validation failures.&lt;/p&gt;
+&lt;h3&gt;#5 Built-in Joi conditional validations&lt;/h3&gt;
+&lt;p&gt;If a field depends on values from another field, the conditional when() can be used.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// joi-from-doc.js&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Joi &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;joi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;x&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;b&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+      is&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
+      then&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
+      otherwise&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;z&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;x&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// valid&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;z&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// valid&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;z&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// valid&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// invalid&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;error &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// valid&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this case, the field &lt;code&gt;a&lt;/code&gt; accepts the values &lt;code&gt;x, y, z&lt;/code&gt;. But, to accept &lt;code&gt;y&lt;/code&gt; as a value, the field b have to be equals 5, otherwise only &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;z&lt;/code&gt; will be accepted.&lt;/p&gt;
+&lt;p&gt;Of course, this is a simple and fictitious conditional validation, but it is quite useful in cases where some field requires a specific validator when some other had a specific input.&lt;/p&gt;
+&lt;h2&gt;Are you ready to use it?&lt;/h2&gt;
+&lt;p&gt;I hope this post convinced you to use some validation tool such as Joi, instead of validating everything by hand (or not validating at all). But, if you are using it already: do you know any other cool trick or tweak? Let me know in the comments section below.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Joi repo: &lt;a href=&quot;https://github.com/hapijs/joi&quot;&gt;https://github.com/hapijs/joi&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Joi API Reference: &lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md&quot;&gt;https://github.com/hapijs/joi/blob/v10.6.0/API.md&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Joigoose repo: &lt;a href=&quot;https://github.com/yoitsro/joigoose&quot;&gt;https://github.com/yoitsro/joigoose&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Joi-browser repo: &lt;a href=&quot;https://github.com/jeffbski/joi-browser&quot;&gt;https://github.com/jeffbski/joi-browser&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mongoose website: &lt;a href=&quot;http://mongoosejs.com&quot;&gt;http://mongoosejs.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vogels repo: &lt;a href=&quot;https://github.com/ryanfitz/vogels&quot;&gt;https://github.com/ryanfitz/vogels&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Still using GitFlow? What about a simpler alternative?]]></title><description><![CDATA[Alternative on sight… GitFlow is a branching model created by Vincent Driessen on 2010 ( original article ). Since it was published, many…]]></description><link>http://brunoluiz.net/blog/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</guid><pubDate>Tue, 18 Jul 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.64999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGOvC5YBwn/xAAcEAEAAQQDAAAAAAAAAAAAAAACAQADBBEhIzH/2gAIAQEAAQUCszJSyGjql1k+vhf/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAwEBAAAAAAAAAAAAAAAAABAhEQH/2gAIAQEABj8CkM6oYv/EABsQAQACAgMAAAAAAAAAAAAAAAEAESExQVFh/9oACAEBAAE/Ibe7HMbuB4bi7xKUbplmXWw2ls//2gAMAwEAAgADAAAAEJAP/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QI//EABYRAQEBAAAAAAAAAAAAAAAAAAAhEf/aAAgBAgEBPxC4r//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESFRMUFhsfH/2gAIAQEAAT8QC3Q0LT5GFURcw9RKo1fcAS2nPMRaGkHPmU2gO5//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;header&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg&quot;
+        srcset=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/f39eb/header.jpeg 180w,
+/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/e1b9c/header.jpeg 360w,
+/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg 720w,
+/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/deb56/header.jpeg 1080w,
+/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cf22f/header.jpeg 1440w,
+/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg 2000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    Alternative on sight…&lt;/p&gt;
+&lt;p&gt;GitFlow is a branching model created by Vincent Driessen on 2010 (&lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;original article&lt;/a&gt;). Since it was published, many companies had tested and implemented it, which allows us to have many reviews about how well (or not) it works. After some discussions within our team, we decided to not go with GitFlow, but use a simpler model instead, together with a tightly defined workflow. Some of the discussed reasons of why not go with GitFlow are the same written on &lt;a href=&quot;http://endoflineblog.com/gitflow-considered-harmful&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;The Feature Branch Model&lt;/h2&gt;
+&lt;p&gt;Compared to GitFlow, it is easier to implement and does not require any plugins to be properly used. The step-by-step of this model would be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a branch from the master (feature-x), which is where the feature will be developed: &lt;code&gt;git checkout -b feature-x&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push the branch to the remote: &lt;code&gt;git push -u origin feature-x&lt;/code&gt;. With the branch in the remote repo, a pull request should be opened with it (&lt;a href=&quot;https://help.github.com/articles/creating-a-pull-request/&quot;&gt;How to open it in GitHub&lt;/a&gt;). A pull request is where all modifications are available to other members and they will be able to review it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fix the reviewed code and wait for approval. If a new release on the master generates a conflict, a best practice would be to rebase it (instead of merging)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(optional) If a rebase is needed: checkout to master &lt;code&gt;git checkout master&lt;/code&gt;, pull the changes &lt;code&gt;git pull&lt;/code&gt;, go back to the feature branch &lt;code&gt;git checkout feature-x&lt;/code&gt;, do the rebase &lt;code&gt;git rebase master&lt;/code&gt; and then sync the rebased branch &lt;code&gt;git push --force-with-lease&lt;/code&gt;. &lt;a href=&quot;https://www.atlassian.com/git/tutorials/merging-vs-rebasing&quot;&gt;A good tutorial about merging x rebasing is available on this Atlassian article&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If there are no conflicts and it was approved ⇒ &lt;strong&gt;squash + merge&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow&quot;&gt;This Atlassian article have a more detailed view on the feature branch model&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Why Squash + Merge instead of just Merge?&lt;/h3&gt;
+&lt;p&gt;The squash and merge is made up of two processes: the squash, which compact all commits in one big commit/patch, and then the merge itself. After squashing + merging, you will have only one commit in the target branch (usually master) containing all your modifications. This enables two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It is easier to move this feature, as the whole patch/feature will be on one commit hash&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The target branch will be cleaner, less messy and more readable — without those 67 commits you have made to finish the feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are more information about &lt;a href=&quot;https://softwareengineering.stackexchange.com/questions/263164/why-squash-git-commits-for-pull-requests&quot;&gt;about why devs prefers squash and merge, instead of only merging, on this article&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Managing release versions with git tags&lt;/h2&gt;
+&lt;p&gt;In the feature branch model, a merge is considered a new version release. To track each release version, tags can be used. These will be used as reference to choose which version should be deployed at the servers.&lt;/p&gt;
+&lt;p&gt;To manage these tags/release, a good practice is the usage of &lt;a href=&quot;http://semver.org&quot;&gt;*semantic versioning&lt;/a&gt;:*&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given a version number &lt;strong&gt;MAJOR.MINOR.PATCH&lt;/strong&gt;, increment the:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;MAJOR version when you make incompatible API changes,&lt;/li&gt;
+&lt;li&gt;MINOR version when you add functionality in a backwards-compatible manner, and&lt;/li&gt;
+&lt;li&gt;PATCH version when you make backwards-compatible bug fixes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The process to create the releases can be automated using &lt;a href=&quot;https://github.com/geddski/grunt-release&quot;&gt;&lt;code&gt;grunt-release&lt;/code&gt;&lt;/a&gt; or &lt;a href=&quot;https://github.com/lfender6445/gulp-release-tasks&quot;&gt;&lt;code&gt;gulp-release-tasks&lt;/code&gt;&lt;/a&gt;. But, following the steps bellow, it can be easily done by hand:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Checkout to the master branch: &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pull changes from the remote &lt;code&gt;git pull&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get the most recent tag using &lt;code&gt;git describe --abbrev=0&lt;/code&gt; (let’s say it returns v0.1.0)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a tag using &lt;code&gt;git tag -a &amp;#x3C;version&gt;&lt;/code&gt;⇒&lt;code&gt;git tag -a v0.2.0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push the modifications and the tag: &lt;code&gt;git push origin v0.2.0 --follow-tags&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Done!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Deploying&lt;/h2&gt;
+&lt;p&gt;In many PaaS, such as AWS Beanstalk or Heroku, a remote repository is set-up where, when changes are pushed (eg. git push heroku master), a deploy is triggered using the latest commits on master. In these cases, a simple push force using the release tag will deploy the desired version: &lt;code&gt;git push -f &amp;#x3C;deploy/env-remote&gt; v0.2.0:master&lt;/code&gt;. Easy, eh?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: At Chaordic New Offers Team, a grunt script was developed where we publish which tag should be deployed: &lt;code&gt;grunt deploy:&amp;#x3C;version&gt;:&amp;#x3C;env&gt;:all&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What happens if a hot-fix is needed?&lt;/h2&gt;
+&lt;p&gt;At some point, an issue will be raised and the production version will need a hot-fix &lt;em&gt;ASAP&lt;/em&gt;. A feature branch can’t just be opened to develop a fix, as the master will probably be ahead of the production version. In this case, the fix needs to be done directly on the production version:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Checkout to the production version tag &lt;code&gt;git checkout v0.10.0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new branch from this tag &lt;code&gt;git checkout -b hotfix-v0.10.1-weirdbehavior&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create the fix and commit it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a tag for this new release &lt;code&gt;git tag -a v0.10.1&lt;/code&gt; (notice the SEMVER pattern)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push the branch and tag to remote &lt;code&gt;git push -u origin hotfix-v0.10.1-weirdbehavior --follow-tags&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy the tag &lt;code&gt;v0.10.1&lt;/code&gt; to the production environment&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A push request should be opened, as the fix should be applied at the master afterwards&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If more patches are needed, this process can be repeated on the same version, incrementing only the patch version.&lt;/p&gt;
+&lt;h3&gt;What about applying it to other environments?&lt;/h3&gt;
+&lt;p&gt;This patch probably should be applied to other environments as well, which can be done through &lt;a href=&quot;http://think-like-a-git.net/sections/rebase-from-the-ground-up/cherry-picking-explained.html&quot;&gt;git cherry-pick&lt;/a&gt; &lt;commit-hash&gt; . It basically applies the chosen commit to the actual HEAD.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Checkout to the environment version tag &lt;code&gt;git checkout v0.13.0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new branch for the patch &lt;code&gt;git checkout -b hotfix-v0.13.1&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do a &lt;code&gt;git cherry-pick v0.10.1&lt;/code&gt; or a &lt;code&gt;git cherry-pick &amp;#x3C;commit-hash&gt;&lt;/code&gt; to apply the desired commit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git tag -a v0.13.1&lt;/code&gt; and &lt;code&gt;git push origin v0.13.1&lt;/code&gt; (push just the tag)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;What if I want to get a modification from master and sent to one of the environments?&lt;/h3&gt;
+&lt;p&gt;It is very similar to the above one: a &lt;code&gt;git cherry-pick&lt;/code&gt; should be done using a commit hash from the master as, after &lt;strong&gt;squash + merge&lt;/strong&gt; a push request, a new commit is generated with all changes (big patch of commits condensed in one).&lt;/p&gt;
+&lt;h2&gt;Just keep in mind…&lt;/h2&gt;
+&lt;p&gt;The gap between the environments versions should be as short as possible. Otherwise, some issues may appear:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If the production is on &lt;code&gt;v0.1.10&lt;/code&gt;, the latest release is &lt;code&gt;v0.10&lt;/code&gt;, but the version &lt;code&gt;v0.3&lt;/code&gt; will be deployed: the team members will have to check if some of the production patches are still required and then apply them, one by one.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If some feature was only finished on &lt;code&gt;v0.10.0&lt;/code&gt;, and it is required for the roll-out, but the &lt;code&gt;v0.7.0&lt;/code&gt; is still not well tested: the release should be hold until the &lt;code&gt;v0.7.0&lt;/code&gt; has been tested&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usually, these version gaps occur when the producing capacity is higher than the testing capacity (developers x testers ratio).&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The model is still being tested but, until now, it has been working well. The only faced drawbacks were the ones pointed on the session above.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Are you using git push force? Oh mate, you are doing it wrong!]]></title><description><![CDATA[You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or…]]></description><link>http://brunoluiz.net/blog/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</link><guid isPermaLink="false">http://brunoluiz.net/blog/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</guid><pubDate>Sat, 03 Jun 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;&amp;#x27;header.png&amp;#x27;&quot; alt=&quot;Git branching&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or development branch, done your commits, pushed this feature branch to the remote and opened a push request for peer review.&lt;/p&gt;
+&lt;p&gt;In ideal cases, you will be able to just squash and merge after some reviews and fixes. But, the world is not ideal (as you might know), and maybe one of your mates modified the same files and already merged it. So, surprise surprise, you got a merge conflict to resolve!&lt;/p&gt;
+&lt;p&gt;This usually means you will need to do a &lt;em&gt;git rebase&lt;/em&gt; before merging. After doing it, this new rebased branch need to be pushed back to the remote. And here is one of the steps that people usually do wrong:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-sh line-numbers&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git push —-force&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You might be thinking: what is the problem with this?&lt;/p&gt;
+&lt;p&gt;Well, &lt;strong&gt;push force&lt;/strong&gt; ignore everything on the remote and override it with local changes. This is “kinda” what you want, but what if you did some mistake in the rebase but didn’t notice? Or someone pushed more modifications while you were rebasing? Yes, you thought right: kaputt, gone. One safer way to do this is using:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-sh line-numbers&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git push --force-with-lease&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This simple command will not push force your modifications until it checked if everything that is in the remote is also in your rebased version. It is the same as a &lt;em&gt;push force&lt;/em&gt;, but safer.&lt;/p&gt;
+&lt;p&gt;If you want to know more about it, checkout &lt;a href=&quot;https://developer.atlassian.com/blog/2015/04/force-with-lease/&quot;&gt;this article&lt;/a&gt;. But the basic idea is: &lt;strong&gt;start to use &lt;em&gt;force-with-lease&lt;/em&gt; instead of &lt;em&gt;force&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;</content:encoded></item></channel></rss>
