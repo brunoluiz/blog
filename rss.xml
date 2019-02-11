@@ -1,4 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz. A collection of my random thoughts.]]></description><link>https://brunoluiz.net/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 22:24:59 GMT</lastBuildDate><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices…]]></description><link>https://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">https://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz. A collection of my random thoughts.]]></description><link>https://brunoluiz.net/blog</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Feb 2019 22:35:10 GMT</lastBuildDate><item><title><![CDATA[A guide on npm package publishing]]></title><description><![CDATA[If you are not new in the JavaScript world, you might have already heard about  npm . It is a package manager that let developers easily add…]]></description><link>https://brunoluiz.net/blog/2019/feb/a-guide-to-npm-package-publishing/</link><guid isPermaLink="false">https://brunoluiz.net/blog/2019/feb/a-guide-to-npm-package-publishing/</guid><pubDate>Mon, 11 Feb 2019 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/7240830101bed0c6205181bc5b9ef6fb/56447/header.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 64%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwAC/9oADAMBAAIQAxAAAAFL2DOTOAs//8QAGhAAAgMBAQAAAAAAAAAAAAAAAgMAARIhI//aAAgBAQABBQJJBc8I0NNBmaF3S7f/xAAYEQACAwAAAAAAAAAAAAAAAAABAhASIf/aAAgBAwEBPwE1bTH/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8BNLW//8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERIQIiMTL/2gAIAQEABj8C3VFIycnDySf/xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMVFhcZH/2gAIAQEAAT8hugEdaYJMN+MLAbYjFG4ro+xW8p//2gAMAwEAAgADAAAAEDjP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERQf/aAAgBAwEBPxCjQiP/xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QQ4EP/8QAGxABAQEAAgMAAAAAAAAAAAAAAREAIVExQbH/2gAIAQEAAT8QWdSip9HzVz+iGIMnQ87lBVqtwjt7ZVCLs3//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Paul Esch-Laurent on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/7240830101bed0c6205181bc5b9ef6fb/cfe7c/header.jpeg&quot;
+        srcset=&quot;/blog/static/7240830101bed0c6205181bc5b9ef6fb/f39eb/header.jpeg 180w,
+/blog/static/7240830101bed0c6205181bc5b9ef6fb/e1b9c/header.jpeg 360w,
+/blog/static/7240830101bed0c6205181bc5b9ef6fb/cfe7c/header.jpeg 720w,
+/blog/static/7240830101bed0c6205181bc5b9ef6fb/deb56/header.jpeg 1080w,
+/blog/static/7240830101bed0c6205181bc5b9ef6fb/cf22f/header.jpeg 1440w,
+/blog/static/7240830101bed0c6205181bc5b9ef6fb/56447/header.jpeg 1600w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;If you are not new in the JavaScript world, you might have already heard about &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt;. It is a package manager that let developers easily add packages to a project, as &lt;code&gt;npm install hello-world&lt;/code&gt;. But, have you ever asked “How do I create and publish my own packages”?&lt;/p&gt;
+&lt;h2&gt;How a package is composed?&lt;/h2&gt;
+&lt;p&gt;Packages are quite simple in JavaScript. A &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;index.js&lt;/code&gt; can already do the job. Look at this micro package called &lt;code&gt;dedupe&lt;/code&gt; for example:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/65610ff0a36065606864f3ca8d8ed672/486d0/dedupe.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 65.5625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACTklEQVQ4y52S227TQBCG/RDwCvAk5poqF/A4japK3FBVhdK0Occ52GklBII34YabukpQ1DaxncT2Hu39GTuhaiTKBSv9mrF359uZ2bGCyeSFkMkBgP2tqkzmVa5MVWpUVY6qNqjm+Lt0jn2lzL7SOAij+KV1dHT85vOXr+iPPPQGLpyhi1bXQccZot0bYOBdoTf00Og4qLd7aJJtbNXs9FG7aKJ23kLPGeDg8PCtdXJ69npIQQN3LAkia62+OmsNVbM3Us5go25/qOgS1ez01Gmtrs4bLXV20VC1elM12l3ZHYwkncHR8cmetVgs9rBZVAHMf6qIRRCEFcv3/RKY05KSmzCcY70KwNganJRpDimSUloxsHRNlpc+FzF0Jk2W5SXQv7mpWJPJ5CFDxmIzX0wRhDNEy1sIEUHKZWk5DxFGM9zT/jK8xc+7H/juf4O/8h8yJNYuMFim5td9jFWqEMUSMc/AJCAzQGgglQZMofwfJQKzaEW+eBrIpTZ3K1V+MM4oowhJkiDLiGYoxpiNyrbRmZTK/hcwpeGbhRxFS9ZJirt5gCTlUDRkSmc70lmG5TpGyvjTQKEyE8Ta6MwYRdPKhTB5bnZe9PFKGTNCyl3gdDr9AzRFyfOVQE5HJGUlhISQiiTpRTc+XYDiDuIV2dGjqYceEKtiXV9f7xWbWmsTU78WiwAp9SZhKQWwMuixGBdF30qVvhAoqimAxKpY9Xr9meu6r0ajke15ru04jv3x0wf7feOdfXU5ti/HW239seeV8raWYu0itmAQ6/lvWLaOptvJ26YAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;dedupe repository&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/65610ff0a36065606864f3ca8d8ed672/5b758/dedupe.png&quot;
+        srcset=&quot;/blog/static/65610ff0a36065606864f3ca8d8ed672/e6885/dedupe.png 180w,
+/blog/static/65610ff0a36065606864f3ca8d8ed672/e17e9/dedupe.png 360w,
+/blog/static/65610ff0a36065606864f3ca8d8ed672/5b758/dedupe.png 720w,
+/blog/static/65610ff0a36065606864f3ca8d8ed672/a00f5/dedupe.png 1080w,
+/blog/static/65610ff0a36065606864f3ca8d8ed672/74039/dedupe.png 1440w,
+/blog/static/65610ff0a36065606864f3ca8d8ed672/486d0/dedupe.png 1600w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;There are other useful files such as &lt;code&gt;.gitignore&lt;/code&gt; and &lt;code&gt;.npmignore&lt;/code&gt;, &lt;code&gt;LICENSE&lt;/code&gt; and &lt;code&gt;README.md&lt;/code&gt;, but the main ones are there: &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;index.js&lt;/code&gt;.  Having these, the package just need to be published in a repository, such as the &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm public&lt;/a&gt;. Through this guide, you will be able to have a simple package created and published on npm.&lt;/p&gt;
+&lt;h2&gt;Create a npm package&lt;/h2&gt;
+&lt;p&gt;While doing &lt;a href=&quot;https://apimock.in&quot;&gt;apimock.in&lt;/a&gt;, I had to create multiple serverless stacks. Each have error handlers and, as most of the errors are quite the same, one strategy is to extract these definitions into a package and just install it on each serverless stack. I will use this case as the example through this post.&lt;/p&gt;
+&lt;h3&gt;Create a npmjs.com account&lt;/h3&gt;
+&lt;p&gt;Before doing anything, an account on &lt;a href=&quot;https://npmjs.com&quot;&gt;npmjs.com&lt;/a&gt; is required for publishing a package. This is the website for the npm public repository, the one which is used when  &lt;code&gt;npm install ...&lt;/code&gt; is executed.&lt;/p&gt;
+&lt;p&gt;To create an account, go to &lt;a href=&quot;https://www.npmjs.com/signup&quot;&gt;npm signup page&lt;/a&gt; and fill up the informations. After finishing the process, a test can be done using &lt;code&gt;npm login&lt;/code&gt; and &lt;code&gt;npm whoami&lt;/code&gt;. Has it output your username? Great! It is working!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*sUm176ELamVqjUF1GUpiVw.gif&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Some words about scopes&lt;/h3&gt;
+&lt;p&gt;Scopes are useful in many ways, although not strictly required to publish a npm package. Every npm user has its own scope, defined as the npm user name.&lt;/p&gt;
+&lt;p&gt;As only the developer/company can publish to its own scope, it is quite useful to indicate it is an official package. For example, one can publish a package called &lt;code&gt;xyz-sdk&lt;/code&gt;, but another called &lt;code&gt;xyz&lt;/code&gt; might already exist. How one would now which to install? What if &lt;code&gt;xyz&lt;/code&gt; mimics &lt;code&gt;xyz-sdk&lt;/code&gt;, but with malicious code?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Each npm user/organisation has their own scope, and only you can add packages in your scope. This means you don’t have to worry about someone taking your package name ahead of you. Thus it is also a good way to signal official packages for organisations. (&lt;a href=&quot;https://docs.npmjs.com/misc/scope&quot;&gt;from npm-scopes documentation&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A scoped package would have  a &lt;code&gt;@account&lt;/code&gt; prefix. It would be published as &lt;code&gt;@account/xyz-sdk&lt;/code&gt;, hence easily identifiable as from a specific developer. Besides, the developer don’t have to worry about name clashing, as the scope is account specific. It can be configured to point to a private repository as well,
+making it specially useful for companies.&lt;/p&gt;
+&lt;p&gt;There are &lt;a href=&quot;https://docs.npmjs.com/misc/scope&quot;&gt;more information about scopes here&lt;/a&gt;. Keep in mind it is a good practice to scope packages.&lt;/p&gt;
+&lt;h3&gt;Create a simple package structure&lt;/h3&gt;
+&lt;p&gt;In an empty folder, run &lt;code&gt;npm init —-scope=@your-npm-user&lt;/code&gt;. This will setup a &lt;code&gt;package.json&lt;/code&gt; and ask for some informations, such as name, version, main entry file and author. The end result will be something as the following.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  &amp;quot;name&amp;quot;: &amp;quot;@brunoluiz/jsonapi-errors&amp;quot;,
+  &amp;quot;version&amp;quot;: &amp;quot;0.1.0&amp;quot;,
+  &amp;quot;description&amp;quot;: &amp;quot;JSONAPI Common Errors&amp;quot;,
+  &amp;quot;main&amp;quot;: &amp;quot;index.js&amp;quot;,
+  &amp;quot;scripts&amp;quot;: {
+    &amp;quot;test&amp;quot;: &amp;quot;jest&amp;quot;
+  },
+  &amp;quot;author&amp;quot;: &amp;quot;Bruno Luiz da Silva &amp;lt;contact@brunoluiz.net&amp;gt; (http://brunoluiz.net/)&amp;quot;,
+  &amp;quot;license&amp;quot;: &amp;quot;MIT&amp;quot;
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After having it initialised, is time to code something. Develop a basic implementation of it in the specified main file on &lt;code&gt;npm init&lt;/code&gt; setup (usually &lt;code&gt;index.js&lt;/code&gt;). If the package require dependencies or there are files to be ignored on publishing, add a &lt;code&gt;.gitignore&lt;/code&gt; with what should be ignored (eg: &lt;code&gt;node_modules&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;It is suggested to add a &lt;code&gt;LICENSE.md&lt;/code&gt; and a &lt;code&gt;README.md&lt;/code&gt;, as other developers might use this package. For more informations about licensing, check &lt;a href=&quot;https://choosealicense.com/&quot;&gt;choosealicense.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Publish the package&lt;/h3&gt;
+&lt;p&gt;The basic implementation is done and now is time to deploy it! For the first publish, a &lt;code&gt;npm publish -—access=public&lt;/code&gt; is required. The &lt;code&gt;access=public&lt;/code&gt; param is needed as, by default, it tries to do it as private. On following publishings, a &lt;code&gt;npm publish&lt;/code&gt; will do the job.&lt;/p&gt;
+&lt;p&gt;Congratulations! You published your first package on npm. It should be available at &lt;code&gt;https://npmjs.com/package/@your-npm-user/package-name&lt;/code&gt; and ready to be installed through &lt;code&gt;npm install @your-npm-user/package-name&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*oltzIY-eP8kDiK7mIlUVIQ.gif&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Releasing new versions&lt;/h3&gt;
+&lt;p&gt;After some iterations, the package might need new features. In the example above, &lt;code&gt;jsonapi-errors&lt;/code&gt; only have a &lt;code&gt;index.js&lt;/code&gt; which prints a “hello world” (quite useless). After adding a real implementation, a version bump is required.&lt;/p&gt;
+&lt;p&gt;NPM packages uses semantic versioning. The is &lt;a href=&quot;https://semver.org/&quot;&gt;more information about it here&lt;/a&gt;, but in a nutshell:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MAJOR version when you make incompatible API changes,&lt;/p&gt;
+&lt;p&gt;MINOR version when you add functionality in a backwards-compatible manner, and&lt;/p&gt;
+&lt;p&gt;PATCH version when you make backwards-compatible bug fixes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the &lt;code&gt;jsonapi-errors&lt;/code&gt; example, a minor version increment is required. To do this, a &lt;code&gt;npm version minor&lt;/code&gt; can be used, where it will bump the &lt;code&gt;package.json&lt;/code&gt; version and add a git commit + tag. Then, a &lt;code&gt;npm publish&lt;/code&gt; will take care of pushing it (no need for &lt;code&gt;access&lt;/code&gt; parameter now).&lt;/p&gt;
+&lt;p&gt;There are &lt;a href=&quot;https://docs.npmjs.com/cli/version.html&quot;&gt;more information about the versioning process here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*gg3mGMbiQMFB7FKQQi8NzQ.gif&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Testing on projects and going beyond npm install&lt;/h3&gt;
+&lt;p&gt;A simple way to test the shinny new package is through &lt;code&gt;npm install&lt;/code&gt;. It will work as expected but, if a change is required, a new version has to be published and the project dependency has to be upgraded to use the new one.&lt;/p&gt;
+&lt;p&gt;This is unproductive, specially when a package is new and changes happen quite often. A way to solve it is through &lt;code&gt;npm link&lt;/code&gt;: it creates a symbolic link of the package, inside the project &lt;code&gt;node_modules&lt;/code&gt; folder, where it will use the local version of the module.&lt;/p&gt;
+&lt;p&gt;&amp;#x3C; … to be developed … &gt;&lt;/p&gt;
+&lt;h2&gt;Automate publishing process using CircleCI&lt;/h2&gt;
+&lt;p&gt;If a package have many people collaborating to it, or the deploy process require many extra steps besides publishing it, perhaps an automated setup can improve the workflow. I prefer to use CircleCI, but there are other options such as TravisCI and GitLab CI.&lt;/p&gt;
+&lt;p&gt;On CircleCI Blog there is a &lt;a href=&quot;https://circleci.com/blog/publishing-npm-packages-using-circleci-2-0/&quot;&gt;complete article explaining how to do it&lt;/a&gt;. The final configuration will enable to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;On feature branches, it will just run tests (eg: run tests on pull requests)&lt;/li&gt;
+&lt;li&gt;On git &lt;code&gt;v*.*.*&lt;/code&gt; tag pushes, it will run tests and then publish to the NPM repository  —  remembering, a git version tag is generated by &lt;code&gt;npm version&lt;/code&gt; &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;More configurations can be added, such as saving coverage reports to a bucket or triggering specific web hooks after the jobs (eg: Slack).&lt;/p&gt;
+&lt;h2&gt;Where to go now?&lt;/h2&gt;
+&lt;p&gt;The steps shown in this article will cover most basic necessities on npm package publishing, but there are some specifics I haven’t covered in this article.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Publish the package as TypeScript:&lt;/strong&gt; this allows code typing, more robust codes and, in editors such as VS Code, it enables a batter IntelliSense. &lt;a href=&quot;https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c&quot;&gt;There is a quite complete article on
+ITNext&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Publish it to a private repository:&lt;/strong&gt; there are some small different configurations, as pointing the package scope to the private repository. &lt;a href=&quot;https://docs.npmjs.com/creating-and-publishing-private-packages&quot;&gt;Give a look in this npm article&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices…]]></description><link>https://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">https://brunoluiz.net/blog/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg&quot;
