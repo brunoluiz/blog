@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of my random thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 12 Feb 2019 20:09:53 GMT</lastBuildDate><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices…]]></description><link>https://brunoluiz.net/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">https://brunoluiz.net/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of my random thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 12 Feb 2019 20:13:05 GMT</lastBuildDate><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices…]]></description><link>https://brunoluiz.net/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">https://brunoluiz.net/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg&quot;
+    href=&quot;/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -20,13 +20,13 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by rawpixel.com on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg&quot;
-        srcset=&quot;/blog/static/a11126f471486b2d157de21ec1b44740/f39eb/header.jpeg 180w,
-/blog/static/a11126f471486b2d157de21ec1b44740/e1b9c/header.jpeg 360w,
-/blog/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg 720w,
-/blog/static/a11126f471486b2d157de21ec1b44740/deb56/header.jpeg 1080w,
-/blog/static/a11126f471486b2d157de21ec1b44740/cf22f/header.jpeg 1440w,
-/blog/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg 2000w&quot;
+        src=&quot;/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg&quot;
+        srcset=&quot;/static/a11126f471486b2d157de21ec1b44740/f39eb/header.jpeg 180w,
+/static/a11126f471486b2d157de21ec1b44740/e1b9c/header.jpeg 360w,
+/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg 720w,
+/static/a11126f471486b2d157de21ec1b44740/deb56/header.jpeg 1080w,
+/static/a11126f471486b2d157de21ec1b44740/cf22f/header.jpeg 1440w,
+/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg 2000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -42,7 +42,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg&quot;
+    href=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -61,14 +61,14 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by rawpixel.com on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg&quot;
-        srcset=&quot;/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/f39eb/surprises.jpeg 180w,
-/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/e1b9c/surprises.jpeg 360w,
-/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg 720w,
-/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/deb56/surprises.jpeg 1080w,
-/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/cf22f/surprises.jpeg 1440w,
-/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/54366/surprises.jpeg 2160w,
-/blog/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg 4000w&quot;
+        src=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg&quot;
+        srcset=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/f39eb/surprises.jpeg 180w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/e1b9c/surprises.jpeg 360w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg 720w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/deb56/surprises.jpeg 1080w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/cf22f/surprises.jpeg 1440w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/54366/surprises.jpeg 2160w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg 4000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -85,7 +85,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg&quot;
+    href=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -104,14 +104,14 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by SpaceX on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg&quot;
-        srcset=&quot;/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/f39eb/deploy.jpeg 180w,
-/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/e1b9c/deploy.jpeg 360w,
-/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg 720w,
-/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/deb56/deploy.jpeg 1080w,
-/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/cf22f/deploy.jpeg 1440w,
-/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/54366/deploy.jpeg 2160w,
-/blog/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg 3000w&quot;
+        src=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg&quot;
+        srcset=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/f39eb/deploy.jpeg 180w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/e1b9c/deploy.jpeg 360w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg 720w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/deb56/deploy.jpeg 1080w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/cf22f/deploy.jpeg 1440w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/54366/deploy.jpeg 2160w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg 3000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -127,7 +127,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg&quot;
+    href=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -146,13 +146,13 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Dustin Lee on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg&quot;
-        srcset=&quot;/blog/static/69f917759485c550e5d50f8fe92e3f1e/f39eb/postmortem.jpeg 180w,
-/blog/static/69f917759485c550e5d50f8fe92e3f1e/e1b9c/postmortem.jpeg 360w,
-/blog/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg 720w,
-/blog/static/69f917759485c550e5d50f8fe92e3f1e/deb56/postmortem.jpeg 1080w,
-/blog/static/69f917759485c550e5d50f8fe92e3f1e/cf22f/postmortem.jpeg 1440w,
-/blog/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg 2000w&quot;
+        src=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg&quot;
+        srcset=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/f39eb/postmortem.jpeg 180w,
+/static/69f917759485c550e5d50f8fe92e3f1e/e1b9c/postmortem.jpeg 360w,
+/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg 720w,
+/static/69f917759485c550e5d50f8fe92e3f1e/deb56/postmortem.jpeg 1080w,
+/static/69f917759485c550e5d50f8fe92e3f1e/cf22f/postmortem.jpeg 1440w,
+/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg 2000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -185,7 +185,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg&quot;
+    href=&quot;/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -204,14 +204,14 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Kupono Kuwamura on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg&quot;
-        srcset=&quot;/blog/static/4c7cb5c043852f9237594a41551e399f/f39eb/noproblems.jpeg 180w,
-/blog/static/4c7cb5c043852f9237594a41551e399f/e1b9c/noproblems.jpeg 360w,
-/blog/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg 720w,
-/blog/static/4c7cb5c043852f9237594a41551e399f/deb56/noproblems.jpeg 1080w,
-/blog/static/4c7cb5c043852f9237594a41551e399f/cf22f/noproblems.jpeg 1440w,
-/blog/static/4c7cb5c043852f9237594a41551e399f/54366/noproblems.jpeg 2160w,
-/blog/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg 4000w&quot;
+        src=&quot;/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg&quot;
+        srcset=&quot;/static/4c7cb5c043852f9237594a41551e399f/f39eb/noproblems.jpeg 180w,
+/static/4c7cb5c043852f9237594a41551e399f/e1b9c/noproblems.jpeg 360w,
+/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg 720w,
+/static/4c7cb5c043852f9237594a41551e399f/deb56/noproblems.jpeg 1080w,
+/static/4c7cb5c043852f9237594a41551e399f/cf22f/noproblems.jpeg 1440w,
+/static/4c7cb5c043852f9237594a41551e399f/54366/noproblems.jpeg 2160w,
+/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg 4000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -223,7 +223,7 @@
 &lt;p&gt;This will not be the last problem the team will have to struggle with. Stressful moments like these will appear but this is when the team will learn and grow, being able to rise and aim towards high stakes through time.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Joi: validate input and define databases in JavaScript]]></title><description><![CDATA[As the saying goes:  never trust user input . People coming from PHP and Java have many validation libraries available. But what about…]]></description><link>https://brunoluiz.net/2017/aug/joi-validate-input-and-define-databases-in-javascript/</link><guid isPermaLink="false">https://brunoluiz.net/2017/aug/joi-validate-input-and-define-databases-in-javascript/</guid><pubDate>Wed, 30 Aug 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg&quot;
+    href=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -242,13 +242,13 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Rayi Christian Wicaksono&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg&quot;
-        srcset=&quot;/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/f39eb/header.jpeg 180w,
-/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/e1b9c/header.jpeg 360w,
-/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg 720w,
-/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/deb56/header.jpeg 1080w,
-/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/cf22f/header.jpeg 1440w,
-/blog/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg 1600w&quot;
+        src=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg&quot;
+        srcset=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/f39eb/header.jpeg 180w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/e1b9c/header.jpeg 360w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg 720w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/deb56/header.jpeg 1080w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/cf22f/header.jpeg 1440w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg 1600w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -355,7 +355,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg&quot;
+    href=&quot;/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -374,14 +374,14 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by chuttersnap on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg&quot;
-        srcset=&quot;/blog/static/7711ddf8c0852584701f24f93b2988d7/f39eb/tweaking.jpeg 180w,
-/blog/static/7711ddf8c0852584701f24f93b2988d7/e1b9c/tweaking.jpeg 360w,
-/blog/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg 720w,
-/blog/static/7711ddf8c0852584701f24f93b2988d7/deb56/tweaking.jpeg 1080w,
-/blog/static/7711ddf8c0852584701f24f93b2988d7/cf22f/tweaking.jpeg 1440w,
-/blog/static/7711ddf8c0852584701f24f93b2988d7/54366/tweaking.jpeg 2160w,
-/blog/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg 4000w&quot;
+        src=&quot;/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg&quot;
+        srcset=&quot;/static/7711ddf8c0852584701f24f93b2988d7/f39eb/tweaking.jpeg 180w,
+/static/7711ddf8c0852584701f24f93b2988d7/e1b9c/tweaking.jpeg 360w,
+/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg 720w,
+/static/7711ddf8c0852584701f24f93b2988d7/deb56/tweaking.jpeg 1080w,
+/static/7711ddf8c0852584701f24f93b2988d7/cf22f/tweaking.jpeg 1440w,
+/static/7711ddf8c0852584701f24f93b2988d7/54366/tweaking.jpeg 2160w,
+/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg 4000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -483,7 +483,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Still using GitFlow? What about a simpler alternative?]]></title><description><![CDATA[GitFlow is a branching model created by Vincent Driessen on 2010 ( original article ). Since it was published, many companies had tested and…]]></description><link>https://brunoluiz.net/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</link><guid isPermaLink="false">https://brunoluiz.net/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</guid><pubDate>Tue, 18 Jul 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg&quot;
+    href=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -502,13 +502,13 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Alternative on sight&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg&quot;
-        srcset=&quot;/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/f39eb/header.jpeg 180w,
-/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/e1b9c/header.jpeg 360w,
-/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg 720w,
-/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/deb56/header.jpeg 1080w,
-/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cf22f/header.jpeg 1440w,
-/blog/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg 2000w&quot;
+        src=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg&quot;
+        srcset=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/f39eb/header.jpeg 180w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/e1b9c/header.jpeg 360w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg 720w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/deb56/header.jpeg 1080w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cf22f/header.jpeg 1440w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg 2000w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
@@ -647,7 +647,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;The model is still being tested but, until now, it has been working well. The only faced drawbacks were the ones pointed on the session above.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Are you using git push force? Oh mate, you are doing it wrong!]]></title><description><![CDATA[You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or…]]></description><link>https://brunoluiz.net/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</link><guid isPermaLink="false">https://brunoluiz.net/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</guid><pubDate>Sat, 03 Jun 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/blog/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png&quot;
+    href=&quot;/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -666,11 +666,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Git branching&quot;
         title=&quot;&quot;
-        src=&quot;/blog/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png&quot;
-        srcset=&quot;/blog/static/620d3f100a056fc03663181b22d8cbbd/e6885/header.png 180w,
-/blog/static/620d3f100a056fc03663181b22d8cbbd/e17e9/header.png 360w,
-/blog/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png 720w,
-/blog/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png 778w&quot;
+        src=&quot;/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png&quot;
+        srcset=&quot;/static/620d3f100a056fc03663181b22d8cbbd/e6885/header.png 180w,
+/static/620d3f100a056fc03663181b22d8cbbd/e17e9/header.png 360w,
+/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png 720w,
+/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png 778w&quot;
         sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
       /&gt;
     &lt;/span&gt;
