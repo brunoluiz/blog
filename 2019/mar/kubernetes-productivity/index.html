@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-blog-post-js.e4c66166a7f063b243f8.css">.gatsby-highlight{background-color:#2d2d2d;border-radius:.3em;margin:2em 0;padding:1em;overflow:auto}.gatsby-highlight pre[class*=language-].line-numbers{padding:0 0 0 2.8em;overflow:initial}</style><style data-href="/app.ab12e96a601961374afc.css">code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}</style><meta name="generator" content="Gatsby 2.0.111"/><link rel="canonical" href="https://brunoluiz.net/2019/mar/kubernetes-productivity/" data-baseprotocol="https:" data-basehost="brunoluiz.net"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><title data-react-helmet="true">Bruno Luiz Blog | Devops productivity hacks for Kubernetes</title><meta data-react-helmet="true" name="description" content="Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to its tools, such as…"/><meta data-react-helmet="true" property="og:url" content="https://brunoluiz.net/2019/mar/kubernetes-productivity/"/><meta data-react-helmet="true" property="og:title" content="Devops productivity hacks for Kubernetes"/><meta data-react-helmet="true" property="og:image" content="https://brunoluiz.net/static/43bd152799fa31b547980eacc66082ea/935ac/header.jpeg"/><meta data-react-helmet="true" property="og:description" content="Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to its tools, such as…"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Bruno Luiz Silva"/><meta data-react-helmet="true" name="twitter:title" content="Devops productivity hacks for Kubernetes"/><meta data-react-helmet="true" name="twitter:description" content="Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to its tools, such as…"/><meta data-react-helmet="true" name="google-site-verification" content="2za6GvvisJHVED9GglWd8xO4jWCp4GPpAKYBDM4ttx8"/><script data-react-helmet="true" src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.56 'Source Sans Pro',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.7);font-family:'Source Sans Pro',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;color:hsla(0,0%,0%,0.85);font-family:'Source Sans Pro',sans-serif;font-weight:300;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;color:hsla(0,0%,0%,0.85);font-family:'Source Sans Pro',sans-serif;font-weight:300;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;color:hsla(0,0%,0%,0.85);font-family:'Source Sans Pro',sans-serif;font-weight:300;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;color:hsla(0,0%,0%,0.85);font-family:'Source Sans Pro',sans-serif;font-weight:300;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;color:hsla(0,0%,0%,0.85);font-family:'Source Sans Pro',sans-serif;font-weight:300;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;color:hsla(0,0%,0%,0.85);font-family:'Source Sans Pro',sans-serif;font-weight:300;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}ul{margin-left:1.56rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.56rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;font-size:0.85rem;line-height:1.42;background:hsla(0,0%,0%,0.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.56rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;font-size:1rem;line-height:1.56rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}blockquote{margin-left:0;margin-right:1.56rem;margin-top:0;padding-bottom:0;padding-left:1.17rem;padding-right:0;padding-top:0;margin-bottom:1.56rem;font-size:1.20112rem;line-height:1.56rem;color:hsla(0,0%,0%,0.6);border-left:0.39rem solid hsla(0,0%,0%,0.13);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.56rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.56rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.56rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.56rem;margin-bottom:calc(1.56rem / 2);margin-top:calc(1.56rem / 2);}li > ul{margin-left:1.56rem;margin-bottom:calc(1.56rem / 2);margin-top:calc(1.56rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.56rem / 2);}code{font-size:0.85rem;line-height:1.56rem;}kbd{font-size:0.85rem;line-height:1.56rem;}samp{font-size:0.85rem;line-height:1.56rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.04rem;padding-right:1.04rem;padding-top:0.78rem;padding-bottom:calc(0.78rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}tt,code{background-color:hsla(0,0%,0%,0.04);border-radius:3px;font-family:"SFMono-Regular", Consolas,"Roboto Mono","Droid Sans Mono","Liberation Mono",Menlo,Courier,monospace;padding:0;padding-top:0.2em;padding-bottom:0.2em;}pre code{background:none;line-height:1.42;}code:before,code:after,tt:before,tt:after{letter-spacing:-0.2em;content:" ";}pre code:before,pre code:after,pre tt:before,pre tt:after{content:none;}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:300;}a{font-weight:400;color:#419eda;text-decoration:none;}a:hover{color:#2a6496;text-decoration:underline;}@media only screen and (max-width:768px){html{font-size:100%;line-height:24.88px;}blockquote{margin-left:-1.17rem;margin-right:0;padding-left:0.78rem;}table{font-size:0.83255rem;line-height:1.56rem;}}</style><link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/webpack-runtime-e4113e64a85e74262f06.js"/><link as="script" rel="preload" href="/app-dac4db0af941b9357033.js"/><link as="script" rel="preload" href="/0-d48434b478f9659b5e65.js"/><link as="script" rel="preload" href="/7-317efbd572504785bc48.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-a2f4e0359a7f06912477.js"/><link as="fetch" rel="preload" href="/static/d/456/path---2019-mar-kubernetes-productivity-788-450-nIxlPYKBHeJhoLilxfGGobysLs.json" crossOrigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:37.44rem;padding:2.34rem 1.17rem"><header><h3 style="margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Bruno Luiz Blog</a></h3></header><main><h1>Devops productivity hacks for Kubernetes</h1><p style="font-size:0.83255rem;line-height:1.56rem;display:block;margin-bottom:1.56rem;margin-top:-1.56rem">March 14, 2019</p><div><p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 56.46173149309912%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAABwODQaCLH/8QAGhAAAgIDAAAAAAAAAAAAAAAAAQIAEBESIf/aAAgBAQABBQIdXRYwwYDX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAIBBQAAAAAAAAAAAAAAAAABIQIRIDKB/9oACAEBAAY/AprS4bkO+H//xAAbEAACAgMBAAAAAAAAAAAAAAAAARFBECFRkf/aAAgBAQABPyGCNpRVa+CYEp0oZj//2gAMAwEAAgADAAAAELD/AP/EABgRAAIDAAAAAAAAAAAAAAAAAAARATFh/9oACAEDAQE/EFVE4P/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFh/9oACAECAQE/EGrI0//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExcUH/2gAIAQEAAT8Qq+1Giw9i3T65g0uBIPf2WOy11n//2Q=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Photo by Cameron Venti on Unsplash"
+        title=""
+        src="/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg"
+        srcset="/static/43bd152799fa31b547980eacc66082ea/f39eb/header.jpeg 180w,
+/static/43bd152799fa31b547980eacc66082ea/e1b9c/header.jpeg 360w,
+/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg 720w,
+/static/43bd152799fa31b547980eacc66082ea/deb56/header.jpeg 1080w,
+/static/43bd152799fa31b547980eacc66082ea/cf22f/header.jpeg 1440w,
+/static/43bd152799fa31b547980eacc66082ea/54366/header.jpeg 2160w,
+/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg 3985w"
+        sizes="(max-width: 720px) 100vw, 720px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to its tools, such as <code>kubectl</code>.</p>
+<p>After some point though, using <code>kubectl</code> for everything can get quite verbose, especially if you use many namespaces and contexts. The following tips try to minimise the pain of doing operations solely through it, sometimes even using other tools beside it.</p>
+<h2>Kubectx: context and namespaces management</h2>
+<p>Operations done in <code>kubectl</code> usually require two params: <strong>context</strong> and <strong>namespace</strong>. Any operation will result in something as <code>kubectl --context dev --namespace hello-world exec -it hello-world-app-0 sh</code>. It is fine for a one-time operation, but after some point, it can get quite cumbersome. One way to avoid these long command strings is by using <a href="https://github.com/ahmetb/kubectx"><code>kubectx</code></a>.</p>
+<p>After installing it, the context can be set by simply using <code>kubectx dev</code> and the namespace as <code>kubens hello-world</code>. To list the available contexts and namespaces, just run it without arguments. The above operation can be run by only using <code>kubectl exec -it hello-world-app-0 sh</code>.</p>
+<h2>Terminal aliases</h2>
+<p>Seasoned Unix developers are quite used to terminal aliases. Some are quite popular that are even grouped in packs, such as <a href="https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh">oh-my-zsh git aliases</a>. With Kubernetes is not that different.</p>
+<p>Usually, having <code>alias k="kubectl"</code> already make operations shorter. Using the same example, it would result in <code>k exec -it hello-world-app-0 sh</code>. But, most likely, one alias will not be enough. There are some options for this.</p>
+<p>The first one can be set-up in any terminal emulator (<code>zsh</code>, <code>bash</code>…). Get the <code>.kubectl_aliases</code> file from <a href="https://github.com/ahmetb/kubectl-aliases"><code>ahmetb/kubectl-aliases</code></a> and place it in your home directory. After sourcing it on <code>.zshrc</code> or <code>.bashrc</code>, 600 aliases will be available out-of-box, including the aforementioned <code>k</code>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token punctuation">[</span> -f ~/.kubectl_aliases <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">source</span> ~/.kubectl_aliases</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>If <a href="http://zsh.sourceforge.net/"><code>zsh</code></a> and <a href="https://ohmyz.sh/"><code>oh-my-zsh</code></a> are already set-up, an easier option would be to use the pre-installed <code>kubectl</code> plugin. To enable it, edit your <code>.zshrc</code> and add <code>kubectl</code> to the <code>plugins</code> variable (<a href="https://github.com/robbyrussell/oh-my-zsh#plugins">more details about oh-my-zsh plugins here</a>).</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash">plugins<span class="token operator">=</span><span class="token punctuation">(</span>git kubectl <span class="token punctuation">..</span>.<span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p>There are fewer aliases compared to <code>ahmetb/kubectl-aliases</code>, making it easier to learn and faster to load. The list of <code>oh-my-zsh/kubectl</code> aliases is <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kubectl"> available here </a></p>
+<p><code>kubectx</code> and <code>kubens</code> do not have aliases by default. To allow shorter calls for it, place the following on <code>.zshrc</code> or <code>.bashrc</code>.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token function">alias</span> kns<span class="token operator">=</span><span class="token string">"kubens"</span>
+<span class="token function">alias</span> kcx<span class="token operator">=</span><span class="token string">"kubectx"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>After all these aliases been set-up, the <code>hello-world-app-0 sh</code> can be accessed using a simple <code>keti hello-world-app-0 sh</code>. As games, it will be as learning combat combos, although it will not be as close as a Hadouken combo.</p>
+<h2>Terminal namespace and context indicator</h2>
+<p>Developers are humans (in case you did not know) and humans do not have bulletproof memory. One can forget that kubernetes context is set to production and then run <code>kubectl apply</code> there, instead of dev.</p>
+<p>To avoid this, an indicator can be used in the terminal to show what is the actual context and namespace. The easiest way to do it is by using <a href="https://github.com/jonmosco/kube-ps1"><code>kube-ps1</code></a>. It already comes with <code>oh-my-zsh</code>, requiring <code>kube-ps1</code> to be added to <code>.zshrc</code> plugins variable.</p>
+<p>After installing or enabling it, the PS1 needs to be changed to include the kubectl context and namespace information. This can be easily done by adding <code>export PS1='$(kube_ps1) '$PS1</code> to your <code>.bashrc/.zshrc</code> file. The final result will be something like the following.</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/fec8d741f2ba7c6524e55de6cfa022f6/9eac0/kube-ps1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 40.55118110236221%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABSklEQVQoz53RPU/CQBjA8WqiLESB6Yhge/S9hcQQK6Et5VqKNUYniANIIjDxKYxfQDd3wQ9IchsJnM8hoIsDXvJLe22ef3qpIMB6953006SarxAXuZaDHLuOfMdDk9EEDftDNOqP0PhxjAYPA9Tr9FDnvosiv4XaQRvFjRhdkySfkCQtbFcnCl67dz5red48ikMaRR69vUloRAIah4S2wiYgNGwGlAQNGvgurdcc6tau+HXu1WvssnrxtguKijizDJWZGl4ZlswsW2blisZkpcgUVQTnGyJTtW+aLq3B/cowS0zCZ5+7IMaFDxMimo4XYLmmSUvDKC31P+GthWUpDJeK058gbCxbYfwlWO0JgjIEC9PfXzjjD/kRdB3vhc+YMCtBY9s7yGROklwu85LNnj7/B5/lDd4S7LLKo4fgCKTA8Z5Sm9lD+DnCFz+koApRzSnUAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="kube-ps1 example"
+        title=""
+        src="/static/fec8d741f2ba7c6524e55de6cfa022f6/5b758/kube-ps1.png"
+        srcset="/static/fec8d741f2ba7c6524e55de6cfa022f6/e6885/kube-ps1.png 180w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/e17e9/kube-ps1.png 360w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/5b758/kube-ps1.png 720w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/a00f5/kube-ps1.png 1080w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/74039/kube-ps1.png 1440w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/9eac0/kube-ps1.png 1524w"
+        sizes="(max-width: 720px) 100vw, 720px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>The only issue with <code>kube-ps1</code> is, when used with <code>git</code> plugin in zsh, it can generate really long PS1 strings. If <code>tmux</code> is used, it can be actually set-up in the status bar through <a href="https://github.com/jonmosco/kube-tmux"><code>kube-tmux</code></a> plugin, avoiding PS1 cluttering.</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/d65a578682c3ed63225573b2126cc140/9eac0/kube-tmux-ps1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 49.475065616797906%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAByUlEQVQoz52S30/TUBTHO3xgk63bMJcEZBu9be9tO2oQs18dlrHNxY0NeCC6YGIkAdEr+Hf4L/Aw+A945U/wQeU/waSPblfqabtJRvaA3uSTc9p+88npaQUBzkXr1cOP77Jz1U4VbdU7qN3YRK1aE73Z3UOfj07Qyftj9OmAocO3B+jD/hFqv9gco9Noz22/3BKF0dmxV750X1fdsl28LuVzjlXMO6VCzrHXLKe2sR5QsZ2N9TWnWnnuWAUvE+Sg/wmVF3LPLkH1wBempIXzlafLLqX4RiVLLqEBXq+qmQByy+i5D2Q0HbtYTl2BKphSklI9HW4SKvWpJt2MgycwlhnohuwqSuYbqOJD4WLPyCowoTQA3H+Ee0JZSX+fJOz7E1DpfgRvMHHCM08IOxl4O4KgvxcNKh1B7/SAt0NFTf/2qoQXf/wVYpw5NU3dzZrGr7JtcZXKfCnzmGMV86xGuYkx102dE0Pl1CCcLmvcgOvV1Sfctsv9er3ilkr5r6OPEhLFWCGRSLDk7COWSqdZNBZj4XCYRWZmWDwqskQkysRkkkXjcRbzgKwIzM8vMFlWmKEbx4SQJrimBatY9KXA1PA/+l9C3e6e8Ad9dNWZKftOjgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="kube-tmux example"
+        title=""
+        src="/static/d65a578682c3ed63225573b2126cc140/5b758/kube-tmux-ps1.png"
+        srcset="/static/d65a578682c3ed63225573b2126cc140/e6885/kube-tmux-ps1.png 180w,
+/static/d65a578682c3ed63225573b2126cc140/e17e9/kube-tmux-ps1.png 360w,
+/static/d65a578682c3ed63225573b2126cc140/5b758/kube-tmux-ps1.png 720w,
+/static/d65a578682c3ed63225573b2126cc140/a00f5/kube-tmux-ps1.png 1080w,
+/static/d65a578682c3ed63225573b2126cc140/74039/kube-tmux-ps1.png 1440w,
+/static/d65a578682c3ed63225573b2126cc140/9eac0/kube-tmux-ps1.png 1524w"
+        sizes="(max-width: 720px) 100vw, 720px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h2>Investigating logs: the sane way</h2>
+<p>Failures can happen, debugs are required and check-ups are sometimes necessary. For all of these, application logs are needed. The standard way to open them is:</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash">kubectl --namespace dev --context labs get pods
+<span class="token comment"># get the pod id</span>
+kubectl --namespace dev --context labs logs <span class="token operator">&lt;</span>pod-id<span class="token operator">></span> -f</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>If the pod is killed and restarted, the process has to be repeated as the pod id will change. Besides, the <code>kubectl</code> logs tool is quite simple in terms of features. <a href="https://github.com/wercker/stern"><code>stern</code></a> is meant to be more powerful and allows to tail multiple pods and containers at once (even the whole namespace, if required).</p>
+<p>To tail pods, such as the hello-world example, <code>stern hello-world</code> will do. It would tail everything using the <code>*hello-world*</code> as an expression. If multiple pods were been run, it would log all hello-world pods.</p>
+<p>Shorter calls can be done setting up an alias, such as <code>alias s='stern'</code>. If set, it uses the <code>kubectx</code> and <code>kubens</code> settings, while accepting <code>--namespace</code> and <code>--context</code> args as well.</p>
+<h2>Automatic deployments</h2>
+<p>A way to avoid touching prod environment using <code>kubectl</code> is by setting up <a href="https://github.com/box/kube-applier"><code>kube-applier</code></a>. This service auto-deploy changes on infrastructure changes, based on a git repository.</p>
+<p>It runs as a separate pod, watching and comparing kubernetes manifest repository with deployed services. If there is a difference between manifests, it will automatically apply what is in the git repository, making it the source of truth for kube manifests.</p>
+<p>After installing <code>kube-applier</code>, no deploys should be done through <code>kubectl</code>, as it will always revert to git manifests. This avoids confusions around deployments made in a rush, not merged and then rollbacked by a mistake.</p>
+<h2>Add safety against wrong kubectl apply</h2>
+<p>If <code>kube-applier</code> is not an option, perhaps it would be good to have a protection before <code>kubectl apply</code> operations. There are many ways to do this, the following considers overwriting <code>kaf</code> from <code>oh-my-zsh</code> plugin. It adds a confirmation prompt and shows which context it will be applied to.</p>
+<div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token comment"># Confirm command to be executed</span>
+confirm<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">echo</span> -n <span class="token string">"\e[33mDo you want to run <span class="token variable">$*?</span> [N/yes] \e[m"</span>
+  <span class="token function">read</span> REPLY
+
+  <span class="token comment"># if test "$REPLY" = "y" -o "$REPLY" = "Y"; then</span>
+  <span class="token keyword">if</span> <span class="token function">test</span> <span class="token string">"<span class="token variable">$REPLY</span>"</span> <span class="token operator">=</span> <span class="token string">"yes"</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token string">"<span class="token variable">$@</span>"</span>
+  <span class="token keyword">else</span>
+      <span class="token keyword">echo</span> <span class="token string">"Cancelled by user"</span>
+  <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+safe_kubectlapply<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  context<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>kubectl config current-context<span class="token variable">)</span></span>
+  <span class="token keyword">echo</span> <span class="token string">"\n"</span>
+  <span class="token keyword">echo</span> <span class="token string">"BECAREFUL!!! APPLYING TO \e[31m<span class="token variable">$context</span>\e[m"</span>
+  confirm kubectl apply -f <span class="token string">"<span class="token variable">$@</span>"</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alias</span> kaf<span class="token operator">=</span><span class="token string">'safe_kubectlapply'</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>This can pottentially save lifes. It can be modified to be used with other operations, such as <code>kdel</code> and <code>kdelf</code> (aliases for <code>kubectl delete</code>).</p>
+<h2>Conclusion</h2>
+<p>These are just some tricks I use in my daily kubernetes life. Have a good coding week! 😉</p>
+<h2>References</h2>
+<ul>
+<li>Cover photo by <a href="https://unsplash.com/photos/QtETdXXR7gs?utm_source=unsplash&#x26;utm_medium=referral&#x26;utm_content=creditCopyText">Cameron Venti</a> on Unsplash</li>
+<li><a href="https://github.com/ahmetb/kubectx"><code>kubectx</code> repo</a></li>
+<li><a href="https://github.com/ahmetb/kubectl-aliases"><code>ahmetb/kubectl-aliases</code> repo</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh"><code>oh-my-zsh</code> repo</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kubectl"><code>oh-my-zsh</code> kubectl info</a></li>
+<li><a href="https://github.com/jonmosco/kube-ps1"><code>kube-ps1</code> repo</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kube-ps1"><code>oh-my-zsh</code> kube-ps1 info</a></li>
+<li><a href="https://github.com/jonmosco/kube-tmux"><code>kube-tmux</code> repo</a></li>
+<li><a href="https://github.com/wercker/stern"><code>stern</code> repo</a></li>
+<li><a href="https://github.com/box/kube-applier"><code>kube-applier</code> repo</a></li>
+</ul></div><hr style="margin-bottom:1.56rem"/><div style="display:flex;margin-bottom:1.56rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.78rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB5TsqPWYhCIZwf//EAB0QAAICAQUAAAAAAAAAAAAAAAECAAMQERITITP/2gAIAQEAAQUCdm0TnqtIET13q1hsix+8f//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EAB4QAAIBAwUAAAAAAAAAAAAAAAERAgAQIRIiMTJB/9oACAEBAAY/AjCHaoai2UQ7Tw9tAEDBbs/a4t//xAAcEAADAAIDAQAAAAAAAAAAAAAAAREhMUFhcYH/2gAIAQEAAT8hXoVPhq2VkirZDqkVGJDB0pyVdNfInNpehn//2gAMAwEAAgADAAAAEDPIPP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABwQAQADAQADAQAAAAAAAAAAAAEAESExQWFx8P/aAAgBAQABPxAycATEL2/3Ydw8L6WtPHY/cWD0AGqyenEg2hf2Co4wl6gtNdyBAkK2K8R05nyf/9k=" alt="Bruno Luiz Silva" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s;border-radius:50%"/><noscript><picture><source srcSet="/static/1bc3bc127b6330fdc88c2211310fe75a/d2d31/profile-pic.jpg 1x,
+/static/1bc3bc127b6330fdc88c2211310fe75a/0b804/profile-pic.jpg 1.5x,
+/static/1bc3bc127b6330fdc88c2211310fe75a/753c3/profile-pic.jpg 2x,
+/static/1bc3bc127b6330fdc88c2211310fe75a/31ca8/profile-pic.jpg 3x" /><img width="50" height="50" src="/static/1bc3bc127b6330fdc88c2211310fe75a/d2d31/profile-pic.jpg" alt="Bruno Luiz Silva" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Personal Blog by <strong>Bruno Luiz Silva</strong> <a href="mailto:contact@brunoluiz.net">(contact me)</a><br/>A collection of random software engineering thoughts</p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0;margin-left:0"><li><a rel="prev" href="/2019/feb/a-guide-to-npm-package-publishing/">← <!-- -->A guide on npm package publishing</a></li><li></li></ul><iframe frameBorder="0" scrolling="no" src="https://my.remarkbox.com/embed?rb_owner_key=1d1a74a1-469b-11e9-9d42-040140774501&amp;thread_uri=undefined" style="width:100%" tabindex="0" title="Remarkbox"></iframe></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-86893932-1', 'auto', {});
+      
+      
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"2019-mar-kubernetes-productivity-788","path":"/2019/mar/kubernetes-productivity/"};window.dataPath="456/path---2019-mar-kubernetes-productivity-788-450-nIxlPYKBHeJhoLilxfGGobysLs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.ab12e96a601961374afc.css","/app-dac4db0af941b9357033.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.e4c66166a7f063b243f8.css","/component---src-templates-blog-post-js-a2f4e0359a7f06912477.js"],"component---src-pages-404-js":["/component---src-pages-404-js.e4c66166a7f063b243f8.css","/component---src-pages-404-js-c00bcd9f8b782819c269.js"],"component---src-pages-index-js":["/component---src-pages-index-js.e4c66166a7f063b243f8.css","/component---src-pages-index-js-01b400cd2e20977f10cf.js"],"pages-manifest":["/pages-manifest-a4621020af3516e2e692.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-a2f4e0359a7f06912477.js" async=""></script><script src="/7-317efbd572504785bc48.js" async=""></script><script src="/0-d48434b478f9659b5e65.js" async=""></script><script src="/app-dac4db0af941b9357033.js" async=""></script><script src="/webpack-runtime-e4113e64a85e74262f06.js" async=""></script></body></html>

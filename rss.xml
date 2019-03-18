@@ -1,4 +1,185 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Thu, 14 Mar 2019 21:26:17 GMT</lastBuildDate><item><title><![CDATA[A guide on npm package publishing]]></title><description><![CDATA[If you are not new in the JavaScript world, you might have already heard about  npm . It is a package manager which lets developers easily…]]></description><link>https://brunoluiz.net/2019/feb/a-guide-to-npm-package-publishing/</link><guid isPermaLink="false">https://brunoluiz.net/2019/feb/a-guide-to-npm-package-publishing/</guid><pubDate>Fri, 15 Feb 2019 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Mon, 18 Mar 2019 17:53:09 GMT</lastBuildDate><item><title><![CDATA[Devops productivity hacks for Kubernetes]]></title><description><![CDATA[Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to…]]></description><link>https://brunoluiz.net/2019/mar/kubernetes-productivity/</link><guid isPermaLink="false">https://brunoluiz.net/2019/mar/kubernetes-productivity/</guid><pubDate>Thu, 14 Mar 2019 21:37:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.46173149309912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAABwODQaCLH/8QAGhAAAgIDAAAAAAAAAAAAAAAAAQIAEBESIf/aAAgBAQABBQIdXRYwwYDX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAIBBQAAAAAAAAAAAAAAAAABIQIRIDKB/9oACAEBAAY/AprS4bkO+H//xAAbEAACAgMBAAAAAAAAAAAAAAAAARFBECFRkf/aAAgBAQABPyGCNpRVa+CYEp0oZj//2gAMAwEAAgADAAAAELD/AP/EABgRAAIDAAAAAAAAAAAAAAAAAAARATFh/9oACAEDAQE/EFVE4P/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFh/9oACAECAQE/EGrI0//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExcUH/2gAIAQEAAT8Qq+1Giw9i3T65g0uBIPf2WOy11n//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Cameron Venti on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg&quot;
+        srcset=&quot;/static/43bd152799fa31b547980eacc66082ea/f39eb/header.jpeg 180w,
+/static/43bd152799fa31b547980eacc66082ea/e1b9c/header.jpeg 360w,
+/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg 720w,
+/static/43bd152799fa31b547980eacc66082ea/deb56/header.jpeg 1080w,
+/static/43bd152799fa31b547980eacc66082ea/cf22f/header.jpeg 1440w,
+/static/43bd152799fa31b547980eacc66082ea/54366/header.jpeg 2160w,
+/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg 3985w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to its tools, such as &lt;code&gt;kubectl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After some point though, using &lt;code&gt;kubectl&lt;/code&gt; for everything can get quite verbose, especially if you use many namespaces and contexts. The following tips try to minimise the pain of doing operations solely through it, sometimes even using other tools beside it.&lt;/p&gt;
+&lt;h2&gt;Kubectx: context and namespaces management&lt;/h2&gt;
+&lt;p&gt;Operations done in &lt;code&gt;kubectl&lt;/code&gt; usually require two params: &lt;strong&gt;context&lt;/strong&gt; and &lt;strong&gt;namespace&lt;/strong&gt;. Any operation will result in something as &lt;code&gt;kubectl --context dev --namespace hello-world exec -it hello-world-app-0 sh&lt;/code&gt;. It is fine for a one-time operation, but after some point, it can get quite cumbersome. One way to avoid these long command strings is by using &lt;a href=&quot;https://github.com/ahmetb/kubectx&quot;&gt;&lt;code&gt;kubectx&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After installing it, the context can be set by simply using &lt;code&gt;kubectx dev&lt;/code&gt; and the namespace as &lt;code&gt;kubens hello-world&lt;/code&gt;. To list the available contexts and namespaces, just run it without arguments. The above operation can be run by only using &lt;code&gt;kubectl exec -it hello-world-app-0 sh&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Terminal aliases&lt;/h2&gt;
+&lt;p&gt;Seasoned Unix developers are quite used to terminal aliases. Some are quite popular that are even grouped in packs, such as &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh&quot;&gt;oh-my-zsh git aliases&lt;/a&gt;. With Kubernetes is not that different.&lt;/p&gt;
+&lt;p&gt;Usually, having &lt;code&gt;alias k=&quot;kubectl&quot;&lt;/code&gt; already make operations shorter. Using the same example, it would result in &lt;code&gt;k exec -it hello-world-app-0 sh&lt;/code&gt;. But, most likely, one alias will not be enough. There are some options for this.&lt;/p&gt;
+&lt;p&gt;The first one can be set-up in any terminal emulator (&lt;code&gt;zsh&lt;/code&gt;, &lt;code&gt;bash&lt;/code&gt;…). Get the &lt;code&gt;.kubectl_aliases&lt;/code&gt; file from &lt;a href=&quot;https://github.com/ahmetb/kubectl-aliases&quot;&gt;&lt;code&gt;ahmetb/kubectl-aliases&lt;/code&gt;&lt;/a&gt; and place it in your home directory. After sourcing it on &lt;code&gt;.zshrc&lt;/code&gt; or &lt;code&gt;.bashrc&lt;/code&gt;, 600 aliases will be available out-of-box, including the aforementioned &lt;code&gt;k&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; -f ~/.kubectl_aliases &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;source&lt;/span&gt; ~/.kubectl_aliases&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If &lt;a href=&quot;http://zsh.sourceforge.net/&quot;&gt;&lt;code&gt;zsh&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://ohmyz.sh/&quot;&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt;&lt;/a&gt; are already set-up, an easier option would be to use the pre-installed &lt;code&gt;kubectl&lt;/code&gt; plugin. To enable it, edit your &lt;code&gt;.zshrc&lt;/code&gt; and add &lt;code&gt;kubectl&lt;/code&gt; to the &lt;code&gt;plugins&lt;/code&gt; variable (&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh#plugins&quot;&gt;more details about oh-my-zsh plugins here&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;plugins&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;git kubectl &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are fewer aliases compared to &lt;code&gt;ahmetb/kubectl-aliases&lt;/code&gt;, making it easier to learn and faster to load. The list of &lt;code&gt;oh-my-zsh/kubectl&lt;/code&gt; aliases is &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kubectl&quot;&gt; available here &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;kubectx&lt;/code&gt; and &lt;code&gt;kubens&lt;/code&gt; do not have aliases by default. To allow shorter calls for it, place the following on &lt;code&gt;.zshrc&lt;/code&gt; or &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; kns&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;kubens&quot;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; kcx&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;kubectx&quot;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After all these aliases been set-up, the &lt;code&gt;hello-world-app-0 sh&lt;/code&gt; can be accessed using a simple &lt;code&gt;keti hello-world-app-0 sh&lt;/code&gt;. As games, it will be as learning combat combos, although it will not be as close as a Hadouken combo.&lt;/p&gt;
+&lt;h2&gt;Terminal namespace and context indicator&lt;/h2&gt;
+&lt;p&gt;Developers are humans (in case you did not know) and humans do not have bulletproof memory. One can forget that kubernetes context is set to production and then run &lt;code&gt;kubectl apply&lt;/code&gt; there, instead of dev.&lt;/p&gt;
+&lt;p&gt;To avoid this, an indicator can be used in the terminal to show what is the actual context and namespace. The easiest way to do it is by using &lt;a href=&quot;https://github.com/jonmosco/kube-ps1&quot;&gt;&lt;code&gt;kube-ps1&lt;/code&gt;&lt;/a&gt;. It already comes with &lt;code&gt;oh-my-zsh&lt;/code&gt;, requiring &lt;code&gt;kube-ps1&lt;/code&gt; to be added to &lt;code&gt;.zshrc&lt;/code&gt; plugins variable.&lt;/p&gt;
+&lt;p&gt;After installing or enabling it, the PS1 needs to be changed to include the kubectl context and namespace information. This can be easily done by adding &lt;code&gt;export PS1=&apos;$(kube_ps1) &apos;$PS1&lt;/code&gt; to your &lt;code&gt;.bashrc/.zshrc&lt;/code&gt; file. The final result will be something like the following.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/9eac0/kube-ps1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.55118110236221%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABSklEQVQoz53RPU/CQBjA8WqiLESB6Yhge/S9hcQQK6Et5VqKNUYniANIIjDxKYxfQDd3wQ9IchsJnM8hoIsDXvJLe22ef3qpIMB6953006SarxAXuZaDHLuOfMdDk9EEDftDNOqP0PhxjAYPA9Tr9FDnvosiv4XaQRvFjRhdkySfkCQtbFcnCl67dz5red48ikMaRR69vUloRAIah4S2wiYgNGwGlAQNGvgurdcc6tau+HXu1WvssnrxtguKijizDJWZGl4ZlswsW2blisZkpcgUVQTnGyJTtW+aLq3B/cowS0zCZ5+7IMaFDxMimo4XYLmmSUvDKC31P+GthWUpDJeK058gbCxbYfwlWO0JgjIEC9PfXzjjD/kRdB3vhc+YMCtBY9s7yGROklwu85LNnj7/B5/lDd4S7LLKo4fgCKTA8Z5Sm9lD+DnCFz+koApRzSnUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;kube-ps1 example&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/5b758/kube-ps1.png&quot;
+        srcset=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/e6885/kube-ps1.png 180w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/e17e9/kube-ps1.png 360w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/5b758/kube-ps1.png 720w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/a00f5/kube-ps1.png 1080w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/74039/kube-ps1.png 1440w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/9eac0/kube-ps1.png 1524w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;The only issue with &lt;code&gt;kube-ps1&lt;/code&gt; is, when used with &lt;code&gt;git&lt;/code&gt; plugin in zsh, it can generate really long PS1 strings. If &lt;code&gt;tmux&lt;/code&gt; is used, it can be actually set-up in the status bar through &lt;a href=&quot;https://github.com/jonmosco/kube-tmux&quot;&gt;&lt;code&gt;kube-tmux&lt;/code&gt;&lt;/a&gt; plugin, avoiding PS1 cluttering.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d65a578682c3ed63225573b2126cc140/9eac0/kube-tmux-ps1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 49.475065616797906%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAByUlEQVQoz52S30/TUBTHO3xgk63bMJcEZBu9be9tO2oQs18dlrHNxY0NeCC6YGIkAdEr+Hf4L/Aw+A945U/wQeU/waSPblfqabtJRvaA3uSTc9p+88npaQUBzkXr1cOP77Jz1U4VbdU7qN3YRK1aE73Z3UOfj07Qyftj9OmAocO3B+jD/hFqv9gco9Noz22/3BKF0dmxV750X1fdsl28LuVzjlXMO6VCzrHXLKe2sR5QsZ2N9TWnWnnuWAUvE+Sg/wmVF3LPLkH1wBempIXzlafLLqX4RiVLLqEBXq+qmQByy+i5D2Q0HbtYTl2BKphSklI9HW4SKvWpJt2MgycwlhnohuwqSuYbqOJD4WLPyCowoTQA3H+Ee0JZSX+fJOz7E1DpfgRvMHHCM08IOxl4O4KgvxcNKh1B7/SAt0NFTf/2qoQXf/wVYpw5NU3dzZrGr7JtcZXKfCnzmGMV86xGuYkx102dE0Pl1CCcLmvcgOvV1Sfctsv9er3ilkr5r6OPEhLFWCGRSLDk7COWSqdZNBZj4XCYRWZmWDwqskQkysRkkkXjcRbzgKwIzM8vMFlWmKEbx4SQJrimBatY9KXA1PA/+l9C3e6e8Ad9dNWZKftOjgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;kube-tmux example&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d65a578682c3ed63225573b2126cc140/5b758/kube-tmux-ps1.png&quot;
+        srcset=&quot;/static/d65a578682c3ed63225573b2126cc140/e6885/kube-tmux-ps1.png 180w,
+/static/d65a578682c3ed63225573b2126cc140/e17e9/kube-tmux-ps1.png 360w,
+/static/d65a578682c3ed63225573b2126cc140/5b758/kube-tmux-ps1.png 720w,
+/static/d65a578682c3ed63225573b2126cc140/a00f5/kube-tmux-ps1.png 1080w,
+/static/d65a578682c3ed63225573b2126cc140/74039/kube-tmux-ps1.png 1440w,
+/static/d65a578682c3ed63225573b2126cc140/9eac0/kube-tmux-ps1.png 1524w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Investigating logs: the sane way&lt;/h2&gt;
+&lt;p&gt;Failures can happen, debugs are required and check-ups are sometimes necessary. For all of these, application logs are needed. The standard way to open them is:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;kubectl --namespace dev --context labs get pods
+&lt;span class=&quot;token comment&quot;&gt;# get the pod id&lt;/span&gt;
+kubectl --namespace dev --context labs logs &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pod-id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; -f&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If the pod is killed and restarted, the process has to be repeated as the pod id will change. Besides, the &lt;code&gt;kubectl&lt;/code&gt; logs tool is quite simple in terms of features. &lt;a href=&quot;https://github.com/wercker/stern&quot;&gt;&lt;code&gt;stern&lt;/code&gt;&lt;/a&gt; is meant to be more powerful and allows to tail multiple pods and containers at once (even the whole namespace, if required).&lt;/p&gt;
+&lt;p&gt;To tail pods, such as the hello-world example, &lt;code&gt;stern hello-world&lt;/code&gt; will do. It would tail everything using the &lt;code&gt;*hello-world*&lt;/code&gt; as an expression. If multiple pods were been run, it would log all hello-world pods.&lt;/p&gt;
+&lt;p&gt;Shorter calls can be done setting up an alias, such as &lt;code&gt;alias s=&apos;stern&apos;&lt;/code&gt;. If set, it uses the &lt;code&gt;kubectx&lt;/code&gt; and &lt;code&gt;kubens&lt;/code&gt; settings, while accepting &lt;code&gt;--namespace&lt;/code&gt; and &lt;code&gt;--context&lt;/code&gt; args as well.&lt;/p&gt;
+&lt;h2&gt;Automatic deployments&lt;/h2&gt;
+&lt;p&gt;A way to avoid touching prod environment using &lt;code&gt;kubectl&lt;/code&gt; is by setting up &lt;a href=&quot;https://github.com/box/kube-applier&quot;&gt;&lt;code&gt;kube-applier&lt;/code&gt;&lt;/a&gt;. This service auto-deploy changes on infrastructure changes, based on a git repository.&lt;/p&gt;
+&lt;p&gt;It runs as a separate pod, watching and comparing kubernetes manifest repository with deployed services. If there is a difference between manifests, it will automatically apply what is in the git repository, making it the source of truth for kube manifests.&lt;/p&gt;
+&lt;p&gt;After installing &lt;code&gt;kube-applier&lt;/code&gt;, no deploys should be done through &lt;code&gt;kubectl&lt;/code&gt;, as it will always revert to git manifests. This avoids confusions around deployments made in a rush, not merged and then rollbacked by a mistake.&lt;/p&gt;
+&lt;h2&gt;Add safety against wrong kubectl apply&lt;/h2&gt;
+&lt;p&gt;If &lt;code&gt;kube-applier&lt;/code&gt; is not an option, perhaps it would be good to have a protection before &lt;code&gt;kubectl apply&lt;/code&gt; operations. There are many ways to do this, the following considers overwriting &lt;code&gt;kaf&lt;/code&gt; from &lt;code&gt;oh-my-zsh&lt;/code&gt; plugin. It adds a confirmation prompt and shows which context it will be applied to.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Confirm command to be executed&lt;/span&gt;
+confirm&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; -n &lt;span class=&quot;token string&quot;&gt;&quot;\e[33mDo you want to run &lt;span class=&quot;token variable&quot;&gt;$*?&lt;/span&gt; [N/yes] \e[m&quot;&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;read&lt;/span&gt; REPLY
+
+  &lt;span class=&quot;token comment&quot;&gt;# if test &quot;$REPLY&quot; = &quot;y&quot; -o &quot;$REPLY&quot; = &quot;Y&quot;; then&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$REPLY&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;yes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$@&lt;/span&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Cancelled by user&quot;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  context&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;kubectl config current-context&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;BECAREFUL!!! APPLYING TO \e[31m&lt;span class=&quot;token variable&quot;&gt;$context&lt;/span&gt;\e[m&quot;&lt;/span&gt;
+  confirm kubectl apply -f &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$@&lt;/span&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; kaf&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;safe_kubectlapply&apos;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This can pottentially save lifes. It can be modified to be used with other operations, such as &lt;code&gt;kdel&lt;/code&gt; and &lt;code&gt;kdelf&lt;/code&gt; (aliases for &lt;code&gt;kubectl delete&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These are just some tricks I use in my daily kubernetes life. Have a good coding week! 😉&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cover photo by &lt;a href=&quot;https://unsplash.com/photos/QtETdXXR7gs?utm_source=unsplash&amp;#x26;utm_medium=referral&amp;#x26;utm_content=creditCopyText&quot;&gt;Cameron Venti&lt;/a&gt; on Unsplash&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ahmetb/kubectx&quot;&gt;&lt;code&gt;kubectx&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ahmetb/kubectl-aliases&quot;&gt;&lt;code&gt;ahmetb/kubectl-aliases&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kubectl&quot;&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt; kubectl info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jonmosco/kube-ps1&quot;&gt;&lt;code&gt;kube-ps1&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kube-ps1&quot;&gt;&lt;code&gt;oh-my-zsh&lt;/code&gt; kube-ps1 info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jonmosco/kube-tmux&quot;&gt;&lt;code&gt;kube-tmux&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/wercker/stern&quot;&gt;&lt;code&gt;stern&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/box/kube-applier&quot;&gt;&lt;code&gt;kube-applier&lt;/code&gt; repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[A guide on npm package publishing]]></title><description><![CDATA[If you are not new in the JavaScript world, you might have already heard about  npm . It is a package manager which lets developers easily…]]></description><link>https://brunoluiz.net/2019/feb/a-guide-to-npm-package-publishing/</link><guid isPermaLink="false">https://brunoluiz.net/2019/feb/a-guide-to-npm-package-publishing/</guid><pubDate>Fri, 15 Feb 2019 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/56447/header.jpeg&quot;
