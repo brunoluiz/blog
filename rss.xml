@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 19 Mar 2019 08:18:15 GMT</lastBuildDate><item><title><![CDATA[Kubernetes devops productivity hacks]]></title><description><![CDATA[Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to…]]></description><link>https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</link><guid isPermaLink="false">https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</guid><pubDate>Thu, 14 Mar 2019 21:37:37 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./header.jpeg&quot; alt=&quot;Photo by Cameron Venti on Unsplash&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 19 Mar 2019 08:26:08 GMT</lastBuildDate><item><title><![CDATA[Kubernetes devops productivity hacks]]></title><description><![CDATA[Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to…]]></description><link>https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</link><guid isPermaLink="false">https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</guid><pubDate>Thu, 14 Mar 2019 21:37:37 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.46173149309912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAABwODQaCLH/8QAGhAAAgIDAAAAAAAAAAAAAAAAAQIAEBESIf/aAAgBAQABBQIdXRYwwYDX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAIBBQAAAAAAAAAAAAAAAAABIQIRIDKB/9oACAEBAAY/AprS4bkO+H//xAAbEAACAgMBAAAAAAAAAAAAAAAAARFBECFRkf/aAAgBAQABPyGCNpRVa+CYEp0oZj//2gAMAwEAAgADAAAAELD/AP/EABgRAAIDAAAAAAAAAAAAAAAAAAARATFh/9oACAEDAQE/EFVE4P/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFh/9oACAECAQE/EGrI0//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExcUH/2gAIAQEAAT8Qq+1Giw9i3T65g0uBIPf2WOy11n//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Cameron Venti on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg&quot;
+        srcset=&quot;/static/43bd152799fa31b547980eacc66082ea/f39eb/header.jpeg 180w,
+/static/43bd152799fa31b547980eacc66082ea/e1b9c/header.jpeg 360w,
+/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg 720w,
+/static/43bd152799fa31b547980eacc66082ea/deb56/header.jpeg 1080w,
+/static/43bd152799fa31b547980eacc66082ea/cf22f/header.jpeg 1440w,
+/static/43bd152799fa31b547980eacc66082ea/54366/header.jpeg 2160w,
+/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg 3985w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to its tools, such as &lt;code&gt;kubectl&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;After some point though, using &lt;code&gt;kubectl&lt;/code&gt; for everything can get quite verbose, especially if you use many namespaces and contexts. The following tips try to minimise the pain of doing operations solely through it, sometimes even using other tools beside it.&lt;/p&gt;
 &lt;h2&gt;Kubectx: context and namespaces management&lt;/h2&gt;
@@ -100,6 +136,9 @@
 kubectl --namespace dev --context labs logs &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pod-id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; -f&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;If the pod is killed and restarted, the process has to be repeated as the pod id will change. Besides, the &lt;code&gt;kubectl&lt;/code&gt; logs tool is quite simple in terms of features. &lt;a href=&quot;https://github.com/wercker/stern&quot;&gt;&lt;code&gt;stern&lt;/code&gt;&lt;/a&gt; is meant to be more powerful and allows to tail multiple pods and containers at once (even the whole namespace, if required).&lt;/p&gt;
 &lt;p&gt;To tail pods, such as the hello-world example, &lt;code&gt;stern hello-world&lt;/code&gt; will do. It would tail everything using the &lt;code&gt;*hello-world*&lt;/code&gt; as an expression. If multiple pods were been run, it would log all hello-world pods.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;stern hello-world  &lt;span class=&quot;token comment&quot;&gt;# tail all pods containing &quot;hello-world&quot; in its name&lt;/span&gt;
+stern &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt;            &lt;span class=&quot;token comment&quot;&gt;# tail all pods in current namespace&lt;/span&gt;
+stern --since 1h &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# tail logs from last one hour&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Shorter calls can be done setting up an alias, such as &lt;code&gt;alias s=&apos;stern&apos;&lt;/code&gt;. If set, it uses the &lt;code&gt;kubectx&lt;/code&gt; and &lt;code&gt;kubens&lt;/code&gt; settings, while accepting &lt;code&gt;--namespace&lt;/code&gt; and &lt;code&gt;--context&lt;/code&gt; args as well.&lt;/p&gt;
 &lt;h2&gt;Automatic deployments&lt;/h2&gt;
 &lt;p&gt;A way to avoid touching prod environment using &lt;code&gt;kubectl&lt;/code&gt; is by setting up &lt;a href=&quot;https://github.com/box/kube-applier&quot;&gt;&lt;code&gt;kube-applier&lt;/code&gt;&lt;/a&gt;. This service auto-deploy changes on infrastructure changes, based on a git repository.&lt;/p&gt;
