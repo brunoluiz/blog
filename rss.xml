@@ -1,4 +1,207 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 23 Jul 2019 17:34:19 GMT</lastBuildDate><item><title><![CDATA[Kubernetes devops productivity hacks]]></title><description><![CDATA[Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to…]]></description><link>https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</link><guid isPermaLink="false">https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</guid><pubDate>Thu, 14 Mar 2019 21:37:37 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 23 Jul 2019 18:47:36 GMT</lastBuildDate><item><title><![CDATA[GraphQL feat API Gateway]]></title><description><![CDATA[GraphQL, REST, gRPC, Thrift… Have you ever imagined how to stick these together in a micro-services architecture and expose to the world…]]></description><link>https://brunoluiz.net/graphql-as-a-gateway/</link><guid isPermaLink="false">https://brunoluiz.net/graphql-as-a-gateway/</guid><pubDate>Mon, 01 Jul 2019 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fb5da5c014432c6f403808a14ba084c5/4d3f0/cover.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.75398384632176%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAME/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwAE/9oADAMBAAIQAxAAAAHdC0Qs4fB//8QAGBABAAMBAAAAAAAAAAAAAAAAAAEEQUL/2gAIAQEAAQUC2yh1ZQ//xAAWEQADAAAAAAAAAAAAAAAAAAADEDH/2gAIAQMBAT8BNF//xAAWEQADAAAAAAAAAAAAAAAAAAADEDH/2gAIAQIBAT8BBF//xAAWEAEBAQAAAAAAAAAAAAAAAAACEAD/2gAIAQEABj8Cxpn/xAAZEAACAwEAAAAAAAAAAAAAAAAAARExcSH/2gAIAQEAAT8hVdL6OlbEoTrsvoSUf//aAAwDAQACAAMAAAAQYB//xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAIAQMBAT8Q1Wv/xAAVEQEBAAAAAAAAAAAAAAAAAAAQMf/aAAgBAgEBPxCh/8QAHhAAAwAABwEAAAAAAAAAAAAAAAERIUFhcYGRwfD/2gAIAQEAAT8Qe7Y7XliuqVoOapUweQ8h9jHVqXB//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Photo by Christian Stahl on Unsplash&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fb5da5c014432c6f403808a14ba084c5/cfe7c/cover.jpg&quot;
+        srcset=&quot;/static/fb5da5c014432c6f403808a14ba084c5/f39eb/cover.jpg 180w,
+/static/fb5da5c014432c6f403808a14ba084c5/e1b9c/cover.jpg 360w,
+/static/fb5da5c014432c6f403808a14ba084c5/cfe7c/cover.jpg 720w,
+/static/fb5da5c014432c6f403808a14ba084c5/deb56/cover.jpg 1080w,
+/static/fb5da5c014432c6f403808a14ba084c5/cf22f/cover.jpg 1440w,
+/static/fb5da5c014432c6f403808a14ba084c5/54366/cover.jpg 2160w,
+/static/fb5da5c014432c6f403808a14ba084c5/4d3f0/cover.jpg 4581w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;GraphQL, REST, gRPC, Thrift… Have you ever imagined how to stick these together in a micro-services architecture and expose to the world? There are some common ways to do it, such as using Nginx or Kong. But, an alternative way to do this is by using GraphQL in front of all services.&lt;/p&gt;
+&lt;h2&gt;⏩ API Gateway pattern — a quick introduction&lt;/h2&gt;
+&lt;p&gt;Consider two services: A and B. How a client would be able to request its data? The easiest way would be to make a request to service A and then another to B, each pointing to a different host (eg: &lt;code&gt;a.service/orders&lt;/code&gt; and &lt;code&gt;b.service/users&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;As the number of services grows, it is quite laborious to keep using this strategy. Since there could be too many services and requests to coordinate. To solve this, an API proxy can be used, where the client will request to only one service instead of multiple. This proxy will orchestrate where this request should go, glueing all services in one place.&lt;/p&gt;
+&lt;p&gt;While proxies just forward requests, API Gateways encapsulate more of the application’s internal architecture. Working as a Facade with some other responsibilities, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Request/Response Transformation: requests made by a client can be reshaped before being sent to internal services, with the same applying to responses.&lt;/li&gt;
+&lt;li&gt;Request routing: as a proxy, it routes requests to specific services, translating to other protocols if required.&lt;/li&gt;
+&lt;li&gt;Composition: one request to the gateway can actually be mapped to multiple internal ones.&lt;/li&gt;
+&lt;li&gt;Throttling: limit user requests up to a determined threshold.&lt;/li&gt;
+&lt;li&gt;Security: protect some endpoints with some sort of authentication (JWT token, basic, API tokens etc).&lt;/li&gt;
+&lt;li&gt;Metrics and Logs: as all requests would pass through it, many metrics and logs will be collected through this service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more information on the API gateway pattern, take a look at &lt;a href=&quot;https://www.nginx.com/blog/building-microservices-using-an-api-gateway/&quot;&gt;Nginx micro-services article&lt;/a&gt; and on this &lt;a href=&quot;https://freecontent.manning.com/the-api-gateway-pattern/&quot;&gt;Chris Richardson article&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;🙋 Why GraphQL and not REST?&lt;/h2&gt;
+&lt;p&gt;GraphQL was initially developed by Facebook and &lt;a href=&quot;https://code.fb.com/core-data/graphql-a-data-query-language/&quot;&gt;was open-sourced in 2015&lt;/a&gt;. Many companies started using it for internal APIs, but some are already exposing it as its public API (eg: GitHub, Shopify, Yelp and Contentful).&lt;/p&gt;
+&lt;h3&gt;Schema validation and documentation&lt;/h3&gt;
+&lt;p&gt;With GraphQL, in contrast to from REST, a schema is always required, following &lt;a href=&quot;https://graphql.org&quot;&gt;GraphQL Foundation&lt;/a&gt; directives. This allows not only schema validation from day one, but documentation too. Typed languages can benefit from the schema and generate type definitions through it (eg: &lt;a href=&quot;https://github.com/dotansimha/graphql-code-generator&quot;&gt;typescript graphql-code-generator&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&quot;
+  Fetch posts by user&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; allowing custom filtering
+  &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&quot;
+  posts&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; PostQueryInput&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Post&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+input PostQueryInput &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;categoryId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; String
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&quot;
+Post bla bla bla
+&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&quot;
+type Post &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; String
+  &lt;span class=&quot;token attr-name&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Category&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+type Category &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; String
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In theory, the same could be done with REST by using OpenAPI/Swagger, especially for documentation &lt;del&gt;but YAML, yikes&lt;/del&gt;. But, the code generation tools are not exactly the best and sometimes the schema validation does not work properly, requiring extra middleware and tweaks around it. As GraphQL is standardised in this sense, it doesn’t suffer from these issues.&lt;/p&gt;
+&lt;h3&gt;One endpoint to rule them all&lt;/h3&gt;
+&lt;p&gt;GraphQL only exposes one endpoint. Instead of having N client requests, only one is needed. The server orchestrates everything required to fulfil the whole request, such as: calling multiple micro-services (with any protocol), mapping outputs to the expected schema and logging requests/responses. Besides, this solves &lt;a href=&quot;https://stackoverflow.com/questions/44564905/what-is-over-fetching-or-under-fetching/44568365&quot;&gt;under-fetching issues&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Out-of-box standards&lt;/h3&gt;
+&lt;p&gt;REST has been around for a long time, and during this period developers started to have specific necessities, such as sparse fieldsets, versioning, pagination. There are many ways to implement these features but there aren’t really any standards (the closest solution is &lt;a href=&quot;https://jsonapi.org/&quot;&gt;JSONAPI&lt;/a&gt;). GraphQL comes with some of these specs out-of-box:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql.org/learn/queries/#fields&quot;&gt;Sparse fieldset&lt;/a&gt;: while making the request, all the required fields need to be specified, avoiding over-fetching&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql.org/learn/best-practices/#versioning&quot;&gt;Versioning&lt;/a&gt;: route versioning is not a good practice in GraphQL instead, the schema should continually evolve. New capabilities can be inserted on new types and fields, allowing the client to plan and decide when to change to new resolvers. If a field needs to be deprecated, one can use a directive such as &lt;a href=&quot;https://www.apollographql.com/docs/graphql-tools/schema-directives&quot;&gt;&lt;code&gt;@deprecated&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql.org/learn/pagination/&quot;&gt;Pagination&lt;/a&gt;: there are some conventions and, for more complex implementations, there is the Connection model pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, there is other stuff that one can compare against REST, but the idea is to show that GraphQL can be an option.&lt;/p&gt;
+&lt;h3&gt;Developer experience&lt;/h3&gt;
+&lt;p&gt;Front-end and back-end developers can easily settle on a schema and, in a question of minutes, have stubs built around it. Besides, code generation, IDE auto-completion, easy documentation/schema discovery and good API exploring tools (such as GraphQL Playground and GraphiQL) makes the development experience way nicer when compared to REST.&lt;/p&gt;
+&lt;h2&gt;⚡ GraphQL as your API Gateway&lt;/h2&gt;
+&lt;p&gt;High hopes that you are convinced on trying GraphQL 🙌 Implementing a GraphQL server is not complicated and there are many guides on the web talking about it. The official website &lt;a href=&quot;https://graphql.org/code&quot;&gt;has a list with many server frameworks and libraries&lt;/a&gt; (comes in many flavours).&lt;/p&gt;
+&lt;p&gt;As mentioned in the first section, an API Gateway has some specific responsibilities. As GraphQL is implemented on top of a normal web server application, one can easily add some of these to it, such as authorisation, metrics and logging. Things such as requests/response transformation, routing and composition are done in the GraphQL resolver level, mapping calls to the right services, using the right communication protocols.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even before going full micro-services and using it as a real API Gateway, companies can easily develop everything on top of a GraphQL monolith &lt;del&gt;wait, don’t leave yet&lt;/del&gt; and then, with more time and planning, redirect the resolvers to micro-services. This is particularly useful for small companies, which are still testing ideas. During the migration, back-end might change a lot, but front-end will be able to continue requesting the same stuff.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As teams develop micro-services, a strategy is required to expose and change the public-facing GraphQL schema. There are some known strategies for it:&lt;/p&gt;
+&lt;h3&gt;Remote schema stitching&lt;/h3&gt;
+&lt;p&gt;The gateway will get the schema from other GraphQL services and then stitch them together as the public-facing schema. This allows more freedom for teams, but it will disperse the API schema through multiple places, making it harder to test and easier to break, with a chance to have merge/stitching conflict.&lt;/p&gt;
+&lt;p&gt;Although this can be a problem, teams can do releases without even touching the API Gateway, making the deploys isolated instead of requiring constant API Gateways deploys.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Recently, Apollo Server implemented &lt;a href=&quot;https://www.apollographql.com/docs/apollo-server/federation/introduction/&quot;&gt;Federation&lt;/a&gt;, which will replace remote schema stitching. Bear in mind it is still Apollo specific.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;API Gateway owns schemas&lt;/h3&gt;
+&lt;p&gt;The Schema is contained locally on the gateway. This makes development and testing easier, as everything will be in the same place. The caveat is that the service will constantly be modified by multiple teams (resolvers, schemas), requiring constant gateway releases.&lt;/p&gt;
+&lt;p&gt;As this service will be constantly modified by multiple people, rules around code formatting and style should be agreed through all teams to make the code uniform.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Personally, I prefer this one as it keeps everything in one place, gives high visibility on what is happening and allows easy discovery of other resolvers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Combination of both above&lt;/h3&gt;
+&lt;p&gt;It is possible to mix both strategies, which is especially useful if the team wants to use remote schema stitching but have some services using gRPC or HTTP. Another way to tackle those non-GraphQL services is to put a server in front of it, allowing schema stitching and giving more flexibility for the responsible team.&lt;/p&gt;
+&lt;h2&gt;🙉 Caveats of using GraphQL&lt;/h2&gt;
+&lt;h3&gt;Services can get a bit chatty&lt;/h3&gt;
+&lt;p&gt;On the request below, a user wants all posts with its associated author.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  posts&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;authorId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;bruno&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    title
+    author &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      name
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The issue is, due to the nature of GraphQL, each resolved &lt;code&gt;post&lt;/code&gt; will call the &lt;code&gt;author&lt;/code&gt; resolver, resulting in &lt;code&gt;N-1&lt;/code&gt; unnecessary calls. Using SQL, it would give us:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Query.posts&lt;/code&gt; are resolved: &lt;code&gt;SELECT title, author_id FROM posts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Query.posts&lt;/code&gt; still have un-resolved data about &lt;code&gt;Post.author.name&lt;/code&gt;. For each item, GraphQL will call &lt;code&gt;Post.author&lt;/code&gt; resolver&lt;/li&gt;
+&lt;li&gt;Post A calls &lt;code&gt;Post.author&lt;/code&gt; resolver: &lt;code&gt;SELECT * FROM authors WHERE author_id = &apos;bruno&apos;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Post B calls &lt;code&gt;Post.author&lt;/code&gt; resolver again with the same query&lt;/li&gt;
+&lt;li&gt;Post C calls &lt;code&gt;Post.author&lt;/code&gt; resolver again with the same query&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The two first selects would have returned the required data, but due to how GraphQL resolvers work — each resolved item with missing data calls the subsequent resolver — all these extra calls are made. This is where the &lt;a href=&quot;https://github.com/graphql/dataloader&quot;&gt;DataLoader&lt;/a&gt; pattern shines.&lt;/p&gt;
+&lt;p&gt;Using batching and a cache (per-request only), it will lead your back-end only needing to make the right amount of calls. Probably even saving you from more calls, as the &lt;code&gt;author&lt;/code&gt; could have other resolvers to be called. In the previous example it would do something like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Query.posts&lt;/code&gt; are resolved: &lt;code&gt;SELECT title, author_id FROM posts&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Query.posts&lt;/code&gt; still have un-resolved data about &lt;code&gt;Post.author.name&lt;/code&gt;. For each item, the service would add a call to DataLoader with the required &lt;code&gt;author_id&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;After passing through all items, DataLoader would only execute &lt;code&gt;SELECT * FROM authors WHERE author_id = &apos;bruno&apos;&lt;/code&gt; query and return the response.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The JavaScript implementation is under 400 LOC, making it easier to explore and understand how it actually works. &lt;a href=&quot;https://github.com/graphql/dataloader/blob/master/README.md#other-implementations&quot;&gt;There are implementations in other languages as well&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MPJ, from FunFunFunction, released a &lt;a href=&quot;https://www.youtube.com/watch?v=lAJWHHUz8_8&amp;#x26;list=PL0zVEGEvSaeEjIDdbK1KfR7V9XBCVAr0P&quot;&gt;video series&lt;/a&gt; on how to implement GraphQL in NodeJS. &lt;a href=&quot;https://www.youtube.com/watch?v=--AguZ20lLA&amp;#x26;list=PL0zVEGEvSaeEjIDdbK1KfR7V9XBCVAr0P&amp;#x26;index=3&quot;&gt;Watch the DataLoader video here&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Throttling is not easy as REST&lt;/h3&gt;
+&lt;p&gt;Having everything in one endpoint makes harder to properly implement rate limits because the queries can be quite complex with multiple underlying requests but still one client request. This means an API user can’t be limited through its number of calls to a certain endpoint anymore.&lt;/p&gt;
+&lt;p&gt;An approach to tackle this is by calculating the query complexity and using it as a rate limit score. &lt;a href=&quot;https://developer.github.com/v4/guides/resource-limitations/&quot;&gt;On GitHub API docs&lt;/a&gt;, there are examples of how it works. But, this doesn’t come out-of-box in most server implementations 😞 There are some packages such as &lt;a href=&quot;https://github.com/4Catalyzer/graphql-validation-complexity&quot;&gt;&lt;code&gt;graphql-validation-complexity&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/pa-bru/graphql-cost-analysis&quot;&gt;&lt;code&gt;graphql-cost-analysis&lt;/code&gt;&lt;/a&gt;, where the latter is more advanced, with more options to limit the upcoming queries.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Usage example of graphql-cost-analysis&lt;/span&gt;
+type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# the cost will depend on the `limit` parameter passed to the field&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# then the multiplier will be added to the `parent multipliers` array&lt;/span&gt;
+  customCostWithResolver&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;limit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int
+    &lt;span class=&quot;token directive function&quot;&gt;@cost&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;multipliers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;limit&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;complexity&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# for recursive cost&lt;/span&gt;
+  first&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;limit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; First
+    &lt;span class=&quot;token directive function&quot;&gt;@cost&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;multipliers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;limit&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;useMultipliers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;complexity&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# You can specify several field parameters in the `multipliers` array&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# then the values of the corresponding parameters will be added together.&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# here, the cost will be `parent multipliers` * (`first` + `last`) * `complexity&lt;/span&gt;
+  severalMultipliers&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int
+    &lt;span class=&quot;token directive function&quot;&gt;@cost&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token attr-name&quot;&gt;multipliers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;first&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;last&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Caching is magic until it isn’t&lt;/h3&gt;
+&lt;p&gt;Most clients do caching automatically, but sometimes it doesn’t work as expected, requiring some manual cleaning on the client. Besides, each request might ask for different fields, which makes a bit trickier to cache a resource on the server-side. One might request the whole resource, cache it in memory (eg: Redis), and then allow the API to use it as a reference to select specific fields.&lt;/p&gt;
+&lt;h2&gt;💡 Conclusion&lt;/h2&gt;
+&lt;p&gt;Hopefully, this might have clarified some details of using GraphQL as an API gateway. For those who want to go deeper, there are some references below, from where I took notes for this post.&lt;/p&gt;
+&lt;p&gt;Many thanks for &lt;a href=&quot;https://www.southcla.ws/&quot;&gt;@southclaws&lt;/a&gt;, &lt;a href=&quot;http://michalbock.com/&quot;&gt;@SpeedyCoder&lt;/a&gt;, &lt;a href=&quot;https://github.com/cassiobock&quot;&gt;@cassiobock&lt;/a&gt; and &lt;a href=&quot;https://www.codepreneur.io/&quot;&gt;@codepreneur&lt;/a&gt; for helping me by reviewing this post.&lt;/p&gt;
+&lt;h2&gt;📘 References&lt;/h2&gt;
+&lt;h4&gt;API Gateway&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nginx.com/blog/building-microservices-using-an-api-gateway/&quot;&gt;Ngnix micro-services book chapter about API Gateway&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://freecontent.manning.com/the-api-gateway-pattern/&quot;&gt;Chris Richardson article about API Gateway&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stoplight.io/blog/api-proxy-vs-api-gateway-c008c942a02d/&quot;&gt;API Proxy vs API Gateway&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://microservices.io/patterns/apigateway.html&quot;&gt;Pattern: API Gateway / Back-end for Front-End&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;GraphQL&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql.org/learn/&quot;&gt;GraphQL Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.github.com/v4/guides/resource-limitations/&quot;&gt;GitHub GraphQL Resource Limitations Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tomasalabes.me/blog/graphql/node/microservices/2018/08/11/graphql-architectures.html&quot;&gt;GraphQL Gateway Architectures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robinwieruch.de/why-graphql-advantages-disadvantages-alternatives/&quot;&gt;Why GraphQL: Advantages, Disadvantages &amp;#x26; Alternatives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://webapplog.com/graphql/&quot;&gt;Why GraphQL is Taking Over APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.apollographql.com/docs/graphql-tools/schema-stitching&quot;&gt;Schema stitching — Combining multiple GraphQL APIs into one&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.apollographql.com/apollo-federation-f260cf525d21&quot;&gt;Apollo Federation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=lAJWHHUz8_8&amp;#x26;list=PL0zVEGEvSaeEjIDdbK1KfR7V9XBCVAr0P&quot;&gt;FunFunFunction GraphQL Videos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Tools&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dotansimha/graphql-code-generator&quot;&gt;Typescript &lt;code&gt;graphql-code-generator&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/graphql/dataloader&quot;&gt;DataLoader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/4Catalyzer/graphql-validation-complexity&quot;&gt;&lt;code&gt;graphql-validation-complexity&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pa-bru/graphql-cost-analysis&quot;&gt;&lt;code&gt;graphql-cost-analysis&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Images&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://unsplash.com/photos/8S96OpxSlvg&quot;&gt;Cover Photo by Christian Stahl on Unsplash&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Other&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jsonapi.org/&quot;&gt;JSONAPI: REST alternative to GraphQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/44564905/what-is-over-fetching-or-under-fetching/44568365&quot;&gt;What is over and under-fetching&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Kubernetes devops productivity hacks]]></title><description><![CDATA[Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to…]]></description><link>https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</link><guid isPermaLink="false">https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</guid><pubDate>Thu, 14 Mar 2019 21:37:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg&quot;
