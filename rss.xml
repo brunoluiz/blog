@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Blog]]></title><description><![CDATA[Personal Blog by Bruno Luiz Silva | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 23 Jul 2019 18:47:36 GMT</lastBuildDate><item><title><![CDATA[GraphQL feat API Gateway]]></title><description><![CDATA[GraphQL, REST, gRPC, Thrift… Have you ever imagined how to stick these together in a micro-services architecture and expose to the world…]]></description><link>https://brunoluiz.net/graphql-as-a-gateway/</link><guid isPermaLink="false">https://brunoluiz.net/graphql-as-a-gateway/</guid><pubDate>Mon, 01 Jul 2019 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Luiz Silva]]></title><description><![CDATA[I do code | A collection of random software engineering thoughts.]]></description><link>https://brunoluiz.net</link><generator>RSS for Node</generator><lastBuildDate>Thu, 28 Nov 2019 23:57:37 GMT</lastBuildDate><item><title><![CDATA[GraphQL feat API Gateway]]></title><description><![CDATA[GraphQL, REST, gRPC, Thrift… Have you ever imagined how to stick these together in a micro-services architecture and expose to the world…]]></description><link>https://brunoluiz.net/graphql-as-a-gateway/</link><guid isPermaLink="false">https://brunoluiz.net/graphql-as-a-gateway/</guid><pubDate>Mon, 01 Jul 2019 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/fb5da5c014432c6f403808a14ba084c5/4d3f0/cover.jpg&quot;
+    href=&quot;/static/fb5da5c014432c6f403808a14ba084c5/295e7/cover.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -9,7 +9,7 @@
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -20,15 +20,15 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Christian Stahl on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/fb5da5c014432c6f403808a14ba084c5/cfe7c/cover.jpg&quot;
-        srcset=&quot;/static/fb5da5c014432c6f403808a14ba084c5/f39eb/cover.jpg 180w,
-/static/fb5da5c014432c6f403808a14ba084c5/e1b9c/cover.jpg 360w,
-/static/fb5da5c014432c6f403808a14ba084c5/cfe7c/cover.jpg 720w,
-/static/fb5da5c014432c6f403808a14ba084c5/deb56/cover.jpg 1080w,
-/static/fb5da5c014432c6f403808a14ba084c5/cf22f/cover.jpg 1440w,
-/static/fb5da5c014432c6f403808a14ba084c5/54366/cover.jpg 2160w,
-/static/fb5da5c014432c6f403808a14ba084c5/4d3f0/cover.jpg 4581w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/fb5da5c014432c6f403808a14ba084c5/bef22/cover.jpg&quot;
+        srcset=&quot;/static/fb5da5c014432c6f403808a14ba084c5/257c2/cover.jpg 195w,
+/static/fb5da5c014432c6f403808a14ba084c5/d0630/cover.jpg 390w,
+/static/fb5da5c014432c6f403808a14ba084c5/bef22/cover.jpg 780w,
+/static/fb5da5c014432c6f403808a14ba084c5/1257c/cover.jpg 1170w,
+/static/fb5da5c014432c6f403808a14ba084c5/731f5/cover.jpg 1560w,
+/static/fb5da5c014432c6f403808a14ba084c5/48b41/cover.jpg 2340w,
+/static/fb5da5c014432c6f403808a14ba084c5/295e7/cover.jpg 4581w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -36,7 +36,7 @@
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;GraphQL, REST, gRPC, Thrift… Have you ever imagined how to stick these together in a micro-services architecture and expose to the world? There are some common ways to do it, such as using Nginx or Kong. But, an alternative way to do this is by using GraphQL in front of all services.&lt;/p&gt;
-&lt;h2&gt;⏩ API Gateway pattern — a quick introduction&lt;/h2&gt;
+&lt;h2&gt;API Gateway pattern — a quick introduction&lt;/h2&gt;
 &lt;p&gt;Consider two services: A and B. How a client would be able to request its data? The easiest way would be to make a request to service A and then another to B, each pointing to a different host (eg: &lt;code&gt;a.service/orders&lt;/code&gt; and &lt;code&gt;b.service/users&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;As the number of services grows, it is quite laborious to keep using this strategy. Since there could be too many services and requests to coordinate. To solve this, an API proxy can be used, where the client will request to only one service instead of multiple. This proxy will orchestrate where this request should go, glueing all services in one place.&lt;/p&gt;
 &lt;p&gt;While proxies just forward requests, API Gateways encapsulate more of the application’s internal architecture. Working as a Facade with some other responsibilities, such as:&lt;/p&gt;
@@ -51,7 +51,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;For more information on the API gateway pattern, take a look at &lt;a href=&quot;https://www.nginx.com/blog/building-microservices-using-an-api-gateway/&quot;&gt;Nginx micro-services article&lt;/a&gt; and on this &lt;a href=&quot;https://freecontent.manning.com/the-api-gateway-pattern/&quot;&gt;Chris Richardson article&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2&gt;🙋 Why GraphQL and not REST?&lt;/h2&gt;
+&lt;h2&gt;Why GraphQL and not REST?&lt;/h2&gt;
 &lt;p&gt;GraphQL was initially developed by Facebook and &lt;a href=&quot;https://code.fb.com/core-data/graphql-a-data-query-language/&quot;&gt;was open-sourced in 2015&lt;/a&gt;. Many companies started using it for internal APIs, but some are already exposing it as its public API (eg: GitHub, Shopify, Yelp and Contentful).&lt;/p&gt;
 &lt;h3&gt;Schema validation and documentation&lt;/h3&gt;
 &lt;p&gt;With GraphQL, in contrast to from REST, a schema is always required, following &lt;a href=&quot;https://graphql.org&quot;&gt;GraphQL Foundation&lt;/a&gt; directives. This allows not only schema validation from day one, but documentation too. Typed languages can benefit from the schema and generate type definitions through it (eg: &lt;a href=&quot;https://github.com/dotansimha/graphql-code-generator&quot;&gt;typescript graphql-code-generator&lt;/a&gt;).&lt;/p&gt;
@@ -90,7 +90,7 @@ type Category &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;p&gt;Of course, there is other stuff that one can compare against REST, but the idea is to show that GraphQL can be an option.&lt;/p&gt;
 &lt;h3&gt;Developer experience&lt;/h3&gt;
 &lt;p&gt;Front-end and back-end developers can easily settle on a schema and, in a question of minutes, have stubs built around it. Besides, code generation, IDE auto-completion, easy documentation/schema discovery and good API exploring tools (such as GraphQL Playground and GraphiQL) makes the development experience way nicer when compared to REST.&lt;/p&gt;
-&lt;h2&gt;⚡ GraphQL as your API Gateway&lt;/h2&gt;
+&lt;h2&gt;GraphQL as your API Gateway&lt;/h2&gt;
 &lt;p&gt;High hopes that you are convinced on trying GraphQL 🙌 Implementing a GraphQL server is not complicated and there are many guides on the web talking about it. The official website &lt;a href=&quot;https://graphql.org/code&quot;&gt;has a list with many server frameworks and libraries&lt;/a&gt; (comes in many flavours).&lt;/p&gt;
 &lt;p&gt;As mentioned in the first section, an API Gateway has some specific responsibilities. As GraphQL is implemented on top of a normal web server application, one can easily add some of these to it, such as authorisation, metrics and logging. Things such as requests/response transformation, routing and composition are done in the GraphQL resolver level, mapping calls to the right services, using the right communication protocols.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -111,7 +111,7 @@ type Category &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;/blockquote&gt;
 &lt;h3&gt;Combination of both above&lt;/h3&gt;
 &lt;p&gt;It is possible to mix both strategies, which is especially useful if the team wants to use remote schema stitching but have some services using gRPC or HTTP. Another way to tackle those non-GraphQL services is to put a server in front of it, allowing schema stitching and giving more flexibility for the responsible team.&lt;/p&gt;
-&lt;h2&gt;🙉 Caveats of using GraphQL&lt;/h2&gt;
+&lt;h2&gt;Caveats of using GraphQL&lt;/h2&gt;
 &lt;h3&gt;Services can get a bit chatty&lt;/h3&gt;
 &lt;p&gt;On the request below, a user wants all posts with its associated author.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -164,10 +164,10 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Caching is magic until it isn’t&lt;/h3&gt;
 &lt;p&gt;Most clients do caching automatically, but sometimes it doesn’t work as expected, requiring some manual cleaning on the client. Besides, each request might ask for different fields, which makes a bit trickier to cache a resource on the server-side. One might request the whole resource, cache it in memory (eg: Redis), and then allow the API to use it as a reference to select specific fields.&lt;/p&gt;
-&lt;h2&gt;💡 Conclusion&lt;/h2&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Hopefully, this might have clarified some details of using GraphQL as an API gateway. For those who want to go deeper, there are some references below, from where I took notes for this post.&lt;/p&gt;
 &lt;p&gt;Many thanks for &lt;a href=&quot;https://www.southcla.ws/&quot;&gt;@southclaws&lt;/a&gt;, &lt;a href=&quot;http://michalbock.com/&quot;&gt;@SpeedyCoder&lt;/a&gt;, &lt;a href=&quot;https://github.com/cassiobock&quot;&gt;@cassiobock&lt;/a&gt; and &lt;a href=&quot;https://www.codepreneur.io/&quot;&gt;@codepreneur&lt;/a&gt; for helping me by reviewing this post.&lt;/p&gt;
-&lt;h2&gt;📘 References&lt;/h2&gt;
+&lt;h2&gt;References&lt;/h2&gt;
 &lt;h4&gt;API Gateway&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.nginx.com/blog/building-microservices-using-an-api-gateway/&quot;&gt;Ngnix micro-services book chapter about API Gateway&lt;/a&gt;&lt;/li&gt;
@@ -204,7 +204,7 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Kubernetes devops productivity hacks]]></title><description><![CDATA[Today, Kubernetes is the de facto container orchestration solution. Together with the devops culture, developers have to get familiarised to…]]></description><link>https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</link><guid isPermaLink="false">https://brunoluiz.net/2019/mar/kubernetes-devops-productivity-hacks/</guid><pubDate>Thu, 14 Mar 2019 21:37:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg&quot;
+    href=&quot;/static/43bd152799fa31b547980eacc66082ea/58a7b/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -212,7 +212,7 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -223,15 +223,15 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Cameron Venti on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg&quot;
-        srcset=&quot;/static/43bd152799fa31b547980eacc66082ea/f39eb/header.jpeg 180w,
-/static/43bd152799fa31b547980eacc66082ea/e1b9c/header.jpeg 360w,
-/static/43bd152799fa31b547980eacc66082ea/cfe7c/header.jpeg 720w,
-/static/43bd152799fa31b547980eacc66082ea/deb56/header.jpeg 1080w,
-/static/43bd152799fa31b547980eacc66082ea/cf22f/header.jpeg 1440w,
-/static/43bd152799fa31b547980eacc66082ea/54366/header.jpeg 2160w,
-/static/43bd152799fa31b547980eacc66082ea/e98fc/header.jpeg 3985w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/43bd152799fa31b547980eacc66082ea/bef22/header.jpeg&quot;
+        srcset=&quot;/static/43bd152799fa31b547980eacc66082ea/257c2/header.jpeg 195w,
+/static/43bd152799fa31b547980eacc66082ea/d0630/header.jpeg 390w,
+/static/43bd152799fa31b547980eacc66082ea/bef22/header.jpeg 780w,
+/static/43bd152799fa31b547980eacc66082ea/1257c/header.jpeg 1170w,
+/static/43bd152799fa31b547980eacc66082ea/731f5/header.jpeg 1560w,
+/static/43bd152799fa31b547980eacc66082ea/48b41/header.jpeg 2340w,
+/static/43bd152799fa31b547980eacc66082ea/58a7b/header.jpeg 3985w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -262,7 +262,7 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/9eac0/kube-ps1.png&quot;
+    href=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/872b5/kube-ps1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -270,7 +270,7 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -281,14 +281,13 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;kube-ps1 example&quot;
         title=&quot;&quot;
-        src=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/5b758/kube-ps1.png&quot;
-        srcset=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/e6885/kube-ps1.png 180w,
-/static/fec8d741f2ba7c6524e55de6cfa022f6/e17e9/kube-ps1.png 360w,
-/static/fec8d741f2ba7c6524e55de6cfa022f6/5b758/kube-ps1.png 720w,
-/static/fec8d741f2ba7c6524e55de6cfa022f6/a00f5/kube-ps1.png 1080w,
-/static/fec8d741f2ba7c6524e55de6cfa022f6/74039/kube-ps1.png 1440w,
-/static/fec8d741f2ba7c6524e55de6cfa022f6/9eac0/kube-ps1.png 1524w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/a6eaa/kube-ps1.png&quot;
+        srcset=&quot;/static/fec8d741f2ba7c6524e55de6cfa022f6/39799/kube-ps1.png 195w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/3eb93/kube-ps1.png 390w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/a6eaa/kube-ps1.png 780w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/f72ec/kube-ps1.png 1170w,
+/static/fec8d741f2ba7c6524e55de6cfa022f6/872b5/kube-ps1.png 1524w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -299,7 +298,7 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d65a578682c3ed63225573b2126cc140/9eac0/kube-tmux-ps1.png&quot;
+    href=&quot;/static/d65a578682c3ed63225573b2126cc140/872b5/kube-tmux-ps1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -307,7 +306,7 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -318,14 +317,13 @@ type Query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;kube-tmux example&quot;
         title=&quot;&quot;
-        src=&quot;/static/d65a578682c3ed63225573b2126cc140/5b758/kube-tmux-ps1.png&quot;
-        srcset=&quot;/static/d65a578682c3ed63225573b2126cc140/e6885/kube-tmux-ps1.png 180w,
-/static/d65a578682c3ed63225573b2126cc140/e17e9/kube-tmux-ps1.png 360w,
-/static/d65a578682c3ed63225573b2126cc140/5b758/kube-tmux-ps1.png 720w,
-/static/d65a578682c3ed63225573b2126cc140/a00f5/kube-tmux-ps1.png 1080w,
-/static/d65a578682c3ed63225573b2126cc140/74039/kube-tmux-ps1.png 1440w,
-/static/d65a578682c3ed63225573b2126cc140/9eac0/kube-tmux-ps1.png 1524w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/d65a578682c3ed63225573b2126cc140/a6eaa/kube-tmux-ps1.png&quot;
+        srcset=&quot;/static/d65a578682c3ed63225573b2126cc140/39799/kube-tmux-ps1.png 195w,
+/static/d65a578682c3ed63225573b2126cc140/3eb93/kube-tmux-ps1.png 390w,
+/static/d65a578682c3ed63225573b2126cc140/a6eaa/kube-tmux-ps1.png 780w,
+/static/d65a578682c3ed63225573b2126cc140/f72ec/kube-tmux-ps1.png 1170w,
+/static/d65a578682c3ed63225573b2126cc140/872b5/kube-tmux-ps1.png 1524w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -388,7 +386,7 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[A guide on npm package publishing]]></title><description><![CDATA[If you are not new in the JavaScript world, you might have already heard about  npm . It is a package manager which lets developers easily…]]></description><link>https://brunoluiz.net/2019/feb/a-guide-to-npm-package-publishing/</link><guid isPermaLink="false">https://brunoluiz.net/2019/feb/a-guide-to-npm-package-publishing/</guid><pubDate>Fri, 15 Feb 2019 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/56447/header.jpeg&quot;
+    href=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/d612b/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -396,7 +394,7 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -407,14 +405,14 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Paul Esch-Laurent on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/cfe7c/header.jpeg&quot;
-        srcset=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/f39eb/header.jpeg 180w,
-/static/7240830101bed0c6205181bc5b9ef6fb/e1b9c/header.jpeg 360w,
-/static/7240830101bed0c6205181bc5b9ef6fb/cfe7c/header.jpeg 720w,
-/static/7240830101bed0c6205181bc5b9ef6fb/deb56/header.jpeg 1080w,
-/static/7240830101bed0c6205181bc5b9ef6fb/cf22f/header.jpeg 1440w,
-/static/7240830101bed0c6205181bc5b9ef6fb/56447/header.jpeg 1600w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/bef22/header.jpeg&quot;
+        srcset=&quot;/static/7240830101bed0c6205181bc5b9ef6fb/257c2/header.jpeg 195w,
+/static/7240830101bed0c6205181bc5b9ef6fb/d0630/header.jpeg 390w,
+/static/7240830101bed0c6205181bc5b9ef6fb/bef22/header.jpeg 780w,
+/static/7240830101bed0c6205181bc5b9ef6fb/1257c/header.jpeg 1170w,
+/static/7240830101bed0c6205181bc5b9ef6fb/731f5/header.jpeg 1560w,
+/static/7240830101bed0c6205181bc5b9ef6fb/d612b/header.jpeg 1600w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -427,7 +425,7 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/65610ff0a36065606864f3ca8d8ed672/486d0/dedupe.png&quot;
+    href=&quot;/static/65610ff0a36065606864f3ca8d8ed672/d8e31/dedupe.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -435,7 +433,7 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -446,21 +444,21 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;dedupe repository&quot;
         title=&quot;&quot;
-        src=&quot;/static/65610ff0a36065606864f3ca8d8ed672/5b758/dedupe.png&quot;
-        srcset=&quot;/static/65610ff0a36065606864f3ca8d8ed672/e6885/dedupe.png 180w,
-/static/65610ff0a36065606864f3ca8d8ed672/e17e9/dedupe.png 360w,
-/static/65610ff0a36065606864f3ca8d8ed672/5b758/dedupe.png 720w,
-/static/65610ff0a36065606864f3ca8d8ed672/a00f5/dedupe.png 1080w,
-/static/65610ff0a36065606864f3ca8d8ed672/74039/dedupe.png 1440w,
-/static/65610ff0a36065606864f3ca8d8ed672/486d0/dedupe.png 1600w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/65610ff0a36065606864f3ca8d8ed672/a6eaa/dedupe.png&quot;
+        srcset=&quot;/static/65610ff0a36065606864f3ca8d8ed672/39799/dedupe.png 195w,
+/static/65610ff0a36065606864f3ca8d8ed672/3eb93/dedupe.png 390w,
+/static/65610ff0a36065606864f3ca8d8ed672/a6eaa/dedupe.png 780w,
+/static/65610ff0a36065606864f3ca8d8ed672/f72ec/dedupe.png 1170w,
+/static/65610ff0a36065606864f3ca8d8ed672/a660e/dedupe.png 1560w,
+/static/65610ff0a36065606864f3ca8d8ed672/d8e31/dedupe.png 1600w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;There are other useful files such as &lt;code&gt;.gitignore&lt;/code&gt;, &lt;code&gt;.npmignore&lt;/code&gt;, &lt;code&gt;LICENSE&lt;/code&gt; and &lt;code&gt;README.md&lt;/code&gt;, but the main ones are there: &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;index.js&lt;/code&gt;.  Having these, the package just needs to be published in a repository, such as the &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm public&lt;/a&gt;. Through this guide, you will be able to have a simple package published on npm.&lt;/p&gt;
+&lt;p&gt;There are other useful files such as &lt;code&gt;.gitignore&lt;/code&gt;, &lt;code&gt;.npmignore&lt;/code&gt;, &lt;code&gt;LICENSE&lt;/code&gt; and &lt;code&gt;README.md&lt;/code&gt;, but the main ones are there: &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;index.js&lt;/code&gt;. Having these, the package just needs to be published in a repository, such as the &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm public&lt;/a&gt;. Through this guide, you will be able to have a simple package published on npm.&lt;/p&gt;
 &lt;h2&gt;Create an npm package&lt;/h2&gt;
 &lt;p&gt;While doing &lt;a href=&quot;https://apimock.in&quot;&gt;apimock.in&lt;/a&gt;, I had to create multiple serverless stacks. Each had error handlers and, as most of the errors are quite the same, a good practice would be to extract these definitions into a package and just install it on each serverless stack. This use case will be used as an example through this post.&lt;/p&gt;
 &lt;h3&gt;Create an npmjs.com account&lt;/h3&gt;
@@ -497,7 +495,7 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9be800ea5db75a774ea4524f0457875b/7ad9a/npm_published_module.png&quot;
+    href=&quot;/static/9be800ea5db75a774ea4524f0457875b/8f501/npm_published_module.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -505,7 +503,7 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -516,15 +514,15 @@ safe_kubectlapply&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Published package&quot;
         title=&quot;&quot;
-        src=&quot;/static/9be800ea5db75a774ea4524f0457875b/5b758/npm_published_module.png&quot;
-        srcset=&quot;/static/9be800ea5db75a774ea4524f0457875b/e6885/npm_published_module.png 180w,
-/static/9be800ea5db75a774ea4524f0457875b/e17e9/npm_published_module.png 360w,
-/static/9be800ea5db75a774ea4524f0457875b/5b758/npm_published_module.png 720w,
-/static/9be800ea5db75a774ea4524f0457875b/a00f5/npm_published_module.png 1080w,
-/static/9be800ea5db75a774ea4524f0457875b/74039/npm_published_module.png 1440w,
-/static/9be800ea5db75a774ea4524f0457875b/c6a95/npm_published_module.png 2160w,
-/static/9be800ea5db75a774ea4524f0457875b/7ad9a/npm_published_module.png 2952w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/9be800ea5db75a774ea4524f0457875b/a6eaa/npm_published_module.png&quot;
+        srcset=&quot;/static/9be800ea5db75a774ea4524f0457875b/39799/npm_published_module.png 195w,
+/static/9be800ea5db75a774ea4524f0457875b/3eb93/npm_published_module.png 390w,
+/static/9be800ea5db75a774ea4524f0457875b/a6eaa/npm_published_module.png 780w,
+/static/9be800ea5db75a774ea4524f0457875b/f72ec/npm_published_module.png 1170w,
+/static/9be800ea5db75a774ea4524f0457875b/a660e/npm_published_module.png 1560w,
+/static/9be800ea5db75a774ea4524f0457875b/32983/npm_published_module.png 2340w,
+/static/9be800ea5db75a774ea4524f0457875b/8f501/npm_published_module.png 2952w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -556,7 +554,7 @@ c5bf2ef chore: initial commit&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; 
 &lt;p&gt;On CircleCI Blog there is an &lt;a href=&quot;https://circleci.com/blog/publishing-npm-packages-using-circleci-2-0/&quot;&gt;article explaining in details how to do it&lt;/a&gt;, where:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;On feature branches, it will just run tests (eg: run tests on pull requests)&lt;/li&gt;
-&lt;li&gt;On git &lt;code&gt;v*.*.*&lt;/code&gt; tag pushes, it will run tests and then publish to the NPM repository  —  remembering, a git version tag is generated by &lt;code&gt;npm version&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;On git &lt;code&gt;v*.*.*&lt;/code&gt; tag pushes, it will run tests and then publish to the NPM repository — remembering, a git version tag is generated by &lt;code&gt;npm version&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;More configurations can be added, such as saving coverage reports to a bucket or triggering specific web hooks after the jobs (eg: Slack).&lt;/p&gt;
 &lt;h2&gt;Setup default npm init configs&lt;/h2&gt;
@@ -584,7 +582,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[A Tale Of How To Not Deploy Two Months Old Features]]></title><description><![CDATA[There is one big and very special date on the e-commerce and retail market and it’s called Black Friday. For many, it means “discount prices…]]></description><link>https://brunoluiz.net/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</link><guid isPermaLink="false">https://brunoluiz.net/2018/mar/a-tale-of-how-to-not-deploy-two-months-old-features/</guid><pubDate>Wed, 07 Mar 2018 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg&quot;
+    href=&quot;/static/a11126f471486b2d157de21ec1b44740/35506/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -592,7 +590,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -603,14 +601,14 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by rawpixel.com on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg&quot;
-        srcset=&quot;/static/a11126f471486b2d157de21ec1b44740/f39eb/header.jpeg 180w,
-/static/a11126f471486b2d157de21ec1b44740/e1b9c/header.jpeg 360w,
-/static/a11126f471486b2d157de21ec1b44740/cfe7c/header.jpeg 720w,
-/static/a11126f471486b2d157de21ec1b44740/deb56/header.jpeg 1080w,
-/static/a11126f471486b2d157de21ec1b44740/cf22f/header.jpeg 1440w,
-/static/a11126f471486b2d157de21ec1b44740/562c8/header.jpeg 2000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/a11126f471486b2d157de21ec1b44740/bef22/header.jpeg&quot;
+        srcset=&quot;/static/a11126f471486b2d157de21ec1b44740/257c2/header.jpeg 195w,
+/static/a11126f471486b2d157de21ec1b44740/d0630/header.jpeg 390w,
+/static/a11126f471486b2d157de21ec1b44740/bef22/header.jpeg 780w,
+/static/a11126f471486b2d157de21ec1b44740/1257c/header.jpeg 1170w,
+/static/a11126f471486b2d157de21ec1b44740/731f5/header.jpeg 1560w,
+/static/a11126f471486b2d157de21ec1b44740/35506/header.jpeg 2000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -625,7 +623,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg&quot;
+    href=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/6a6aa/surprises.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -633,7 +631,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -644,15 +642,15 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by rawpixel.com on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg&quot;
-        srcset=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/f39eb/surprises.jpeg 180w,
-/static/1f30eb10f91f81316fbb928cdd92a8c3/e1b9c/surprises.jpeg 360w,
-/static/1f30eb10f91f81316fbb928cdd92a8c3/cfe7c/surprises.jpeg 720w,
-/static/1f30eb10f91f81316fbb928cdd92a8c3/deb56/surprises.jpeg 1080w,
-/static/1f30eb10f91f81316fbb928cdd92a8c3/cf22f/surprises.jpeg 1440w,
-/static/1f30eb10f91f81316fbb928cdd92a8c3/54366/surprises.jpeg 2160w,
-/static/1f30eb10f91f81316fbb928cdd92a8c3/c7ad5/surprises.jpeg 4000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/bef22/surprises.jpeg&quot;
+        srcset=&quot;/static/1f30eb10f91f81316fbb928cdd92a8c3/257c2/surprises.jpeg 195w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/d0630/surprises.jpeg 390w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/bef22/surprises.jpeg 780w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/1257c/surprises.jpeg 1170w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/731f5/surprises.jpeg 1560w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/48b41/surprises.jpeg 2340w,
+/static/1f30eb10f91f81316fbb928cdd92a8c3/6a6aa/surprises.jpeg 4000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -668,7 +666,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg&quot;
+    href=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/08036/deploy.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -676,7 +674,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -687,15 +685,15 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by SpaceX on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg&quot;
-        srcset=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/f39eb/deploy.jpeg 180w,
-/static/28c8034c16b00d5b7c72abfcfce6eaf7/e1b9c/deploy.jpeg 360w,
-/static/28c8034c16b00d5b7c72abfcfce6eaf7/cfe7c/deploy.jpeg 720w,
-/static/28c8034c16b00d5b7c72abfcfce6eaf7/deb56/deploy.jpeg 1080w,
-/static/28c8034c16b00d5b7c72abfcfce6eaf7/cf22f/deploy.jpeg 1440w,
-/static/28c8034c16b00d5b7c72abfcfce6eaf7/54366/deploy.jpeg 2160w,
-/static/28c8034c16b00d5b7c72abfcfce6eaf7/da454/deploy.jpeg 3000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/bef22/deploy.jpeg&quot;
+        srcset=&quot;/static/28c8034c16b00d5b7c72abfcfce6eaf7/257c2/deploy.jpeg 195w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/d0630/deploy.jpeg 390w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/bef22/deploy.jpeg 780w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/1257c/deploy.jpeg 1170w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/731f5/deploy.jpeg 1560w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/48b41/deploy.jpeg 2340w,
+/static/28c8034c16b00d5b7c72abfcfce6eaf7/08036/deploy.jpeg 3000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -710,7 +708,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg&quot;
+    href=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/35506/postmortem.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -718,7 +716,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -729,14 +727,14 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Dustin Lee on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg&quot;
-        srcset=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/f39eb/postmortem.jpeg 180w,
-/static/69f917759485c550e5d50f8fe92e3f1e/e1b9c/postmortem.jpeg 360w,
-/static/69f917759485c550e5d50f8fe92e3f1e/cfe7c/postmortem.jpeg 720w,
-/static/69f917759485c550e5d50f8fe92e3f1e/deb56/postmortem.jpeg 1080w,
-/static/69f917759485c550e5d50f8fe92e3f1e/cf22f/postmortem.jpeg 1440w,
-/static/69f917759485c550e5d50f8fe92e3f1e/562c8/postmortem.jpeg 2000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/bef22/postmortem.jpeg&quot;
+        srcset=&quot;/static/69f917759485c550e5d50f8fe92e3f1e/257c2/postmortem.jpeg 195w,
+/static/69f917759485c550e5d50f8fe92e3f1e/d0630/postmortem.jpeg 390w,
+/static/69f917759485c550e5d50f8fe92e3f1e/bef22/postmortem.jpeg 780w,
+/static/69f917759485c550e5d50f8fe92e3f1e/1257c/postmortem.jpeg 1170w,
+/static/69f917759485c550e5d50f8fe92e3f1e/731f5/postmortem.jpeg 1560w,
+/static/69f917759485c550e5d50f8fe92e3f1e/35506/postmortem.jpeg 2000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -768,7 +766,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg&quot;
+    href=&quot;/static/4c7cb5c043852f9237594a41551e399f/6a6aa/noproblems.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -776,7 +774,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -787,15 +785,15 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Kupono Kuwamura on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg&quot;
-        srcset=&quot;/static/4c7cb5c043852f9237594a41551e399f/f39eb/noproblems.jpeg 180w,
-/static/4c7cb5c043852f9237594a41551e399f/e1b9c/noproblems.jpeg 360w,
-/static/4c7cb5c043852f9237594a41551e399f/cfe7c/noproblems.jpeg 720w,
-/static/4c7cb5c043852f9237594a41551e399f/deb56/noproblems.jpeg 1080w,
-/static/4c7cb5c043852f9237594a41551e399f/cf22f/noproblems.jpeg 1440w,
-/static/4c7cb5c043852f9237594a41551e399f/54366/noproblems.jpeg 2160w,
-/static/4c7cb5c043852f9237594a41551e399f/c7ad5/noproblems.jpeg 4000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/4c7cb5c043852f9237594a41551e399f/bef22/noproblems.jpeg&quot;
+        srcset=&quot;/static/4c7cb5c043852f9237594a41551e399f/257c2/noproblems.jpeg 195w,
+/static/4c7cb5c043852f9237594a41551e399f/d0630/noproblems.jpeg 390w,
+/static/4c7cb5c043852f9237594a41551e399f/bef22/noproblems.jpeg 780w,
+/static/4c7cb5c043852f9237594a41551e399f/1257c/noproblems.jpeg 1170w,
+/static/4c7cb5c043852f9237594a41551e399f/731f5/noproblems.jpeg 1560w,
+/static/4c7cb5c043852f9237594a41551e399f/48b41/noproblems.jpeg 2340w,
+/static/4c7cb5c043852f9237594a41551e399f/6a6aa/noproblems.jpeg 4000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -806,7 +804,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 &lt;p&gt;This will not be the last problem the team will have to struggle with. Stressful moments like these will appear but this is when the team will learn and grow, being able to rise and aim towards high stakes through time.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Joi: validate input and define databases in JavaScript]]></title><description><![CDATA[As the saying goes:  never trust user input . People coming from PHP and Java have many validation libraries available. But what about…]]></description><link>https://brunoluiz.net/2017/aug/joi-validate-input-and-define-databases-in-javascript/</link><guid isPermaLink="false">https://brunoluiz.net/2017/aug/joi-validate-input-and-define-databases-in-javascript/</guid><pubDate>Wed, 30 Aug 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg&quot;
+    href=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/d612b/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -814,7 +812,7 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -825,14 +823,14 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by Rayi Christian Wicaksono&quot;
         title=&quot;&quot;
-        src=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg&quot;
-        srcset=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/f39eb/header.jpeg 180w,
-/static/3b7a8c8cd751a67c7db21ec8d7de792c/e1b9c/header.jpeg 360w,
-/static/3b7a8c8cd751a67c7db21ec8d7de792c/cfe7c/header.jpeg 720w,
-/static/3b7a8c8cd751a67c7db21ec8d7de792c/deb56/header.jpeg 1080w,
-/static/3b7a8c8cd751a67c7db21ec8d7de792c/cf22f/header.jpeg 1440w,
-/static/3b7a8c8cd751a67c7db21ec8d7de792c/56447/header.jpeg 1600w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/bef22/header.jpeg&quot;
+        srcset=&quot;/static/3b7a8c8cd751a67c7db21ec8d7de792c/257c2/header.jpeg 195w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/d0630/header.jpeg 390w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/bef22/header.jpeg 780w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/1257c/header.jpeg 1170w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/731f5/header.jpeg 1560w,
+/static/3b7a8c8cd751a67c7db21ec8d7de792c/d612b/header.jpeg 1600w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -849,27 +847,33 @@ ITNext&lt;/a&gt;.&lt;/li&gt;
 
 module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This defines a model where an username, a rating (from 1 to 5) and an email (which is a required field) are expected. This is a simple example, but there are way more validation options, which can be found on the &lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md&quot;&gt;API reference&lt;/a&gt;. To use the defined schema, consider a file called &lt;code&gt;rating-test.js&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// rating-test.js&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./rating-schema&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;brunoluiz&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;contact@brunoluiz.net&apos;&lt;/span&gt; 
+  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;contact@brunoluiz.net&apos;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// result.error will be null&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;// result.error will show an error due to missing e-mail&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; resultWithError &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; resultWithError &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; schema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;brunoluiz&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  rating&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;resultWithError&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// result.error will have an error message&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;resultWithError&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// result.error will have an error message&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md#errors&quot;&gt;More about Joi errors&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Real project usage&lt;/h2&gt;
 &lt;h3&gt;Validation middleware&lt;/h3&gt;
@@ -887,10 +891,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ....&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// routes.js&lt;/span&gt;
 
-app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/ratings&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  ratingsValidator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  ratingsCreateController
-&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/ratings&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ratingsValidator&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ratingsCreateController&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In this case, if the &lt;code&gt;ratingsValidator&lt;/code&gt; returns an error due to validation, express will stop the request before even reaching the controller.&lt;/p&gt;
 &lt;h3&gt;Database schema (MongoDB and DynamoDB)&lt;/h3&gt;
 &lt;p&gt;Some tools can use it to define their database schema (keep in mind that Joi is not an ORM). For MongoDB, &lt;code&gt;mongoose&lt;/code&gt; can be used together with &lt;a href=&quot;https://github.com/yoitsro/joigoose&quot;&gt;&lt;code&gt;joigoose&lt;/code&gt;&lt;/a&gt;, which easily converts a Joi schema. For example:&lt;/p&gt;
@@ -902,9 +903,9 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./rating-schema&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;// Convert joi to mongoose schema&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mongooseSchema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; joigoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mongooseSchema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; joigoose&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;convert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;schema&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot;&gt;// Modify some fields with database specific instructions &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Modify some fields with database specific instructions&lt;/span&gt;
 mongooseSchema&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;unique &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;// Add fields which don&apos;t make sense on the schema validator&lt;/span&gt;
@@ -922,7 +923,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
   email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   content&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  tags&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; vogels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;types&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringSet&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  tags&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; vogels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;types&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringSet&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// blog-post.js&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./blog-post-schema.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -938,7 +939,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg&quot;
+    href=&quot;/static/7711ddf8c0852584701f24f93b2988d7/6a6aa/tweaking.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -946,7 +947,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -957,15 +958,15 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Photo by chuttersnap on Unsplash&quot;
         title=&quot;&quot;
-        src=&quot;/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg&quot;
-        srcset=&quot;/static/7711ddf8c0852584701f24f93b2988d7/f39eb/tweaking.jpeg 180w,
-/static/7711ddf8c0852584701f24f93b2988d7/e1b9c/tweaking.jpeg 360w,
-/static/7711ddf8c0852584701f24f93b2988d7/cfe7c/tweaking.jpeg 720w,
-/static/7711ddf8c0852584701f24f93b2988d7/deb56/tweaking.jpeg 1080w,
-/static/7711ddf8c0852584701f24f93b2988d7/cf22f/tweaking.jpeg 1440w,
-/static/7711ddf8c0852584701f24f93b2988d7/54366/tweaking.jpeg 2160w,
-/static/7711ddf8c0852584701f24f93b2988d7/c7ad5/tweaking.jpeg 4000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/7711ddf8c0852584701f24f93b2988d7/bef22/tweaking.jpeg&quot;
+        srcset=&quot;/static/7711ddf8c0852584701f24f93b2988d7/257c2/tweaking.jpeg 195w,
+/static/7711ddf8c0852584701f24f93b2988d7/d0630/tweaking.jpeg 390w,
+/static/7711ddf8c0852584701f24f93b2988d7/bef22/tweaking.jpeg 780w,
+/static/7711ddf8c0852584701f24f93b2988d7/1257c/tweaking.jpeg 1170w,
+/static/7711ddf8c0852584701f24f93b2988d7/731f5/tweaking.jpeg 1560w,
+/static/7711ddf8c0852584701f24f93b2988d7/48b41/tweaking.jpeg 2340w,
+/static/7711ddf8c0852584701f24f93b2988d7/6a6aa/tweaking.jpeg 4000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -991,13 +992,16 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; ukzip &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/^[A-Z]{1,2}[0-9]{1,2}[A-Z]{0,1} ?[0-9][A-Z]{2}$/i&lt;/span&gt;
 
-module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;strict&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zipcode&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ukzip&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;UK Zipcode&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;strict&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zipcode&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ukzip&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;UK Zipcode&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;When using Joi through this file, all number fields will be on the strict mode — which solves the issue of applying tweak #1 everywhere — and a &lt;code&gt;zipcode()&lt;/code&gt; validator is created, based on a pre-defined regex.&lt;/p&gt;
 &lt;p&gt;More rules can be added and, actually, the Joi API enables &lt;a href=&quot;https://github.com/hapijs/joi/blob/v10.6.0/API.md#extendextension&quot;&gt;much more customisation&lt;/a&gt; on &lt;code&gt;Joi.extend&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;#3 Create default fields&lt;/h3&gt;
@@ -1008,7 +1012,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 
 module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;object&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+  base&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     extensionAttributes&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     updatedAt&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;now&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -1026,9 +1030,9 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; schema &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;x&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;b&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
-      is&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-      then&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;b&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      is&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      then&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
       otherwise&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;z&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -1066,7 +1070,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Still using GitFlow? What about a simpler alternative?]]></title><description><![CDATA[GitFlow is a branching model created by Vincent Driessen on 2010 ( original article ). Since it was published, many companies had tested and…]]></description><link>https://brunoluiz.net/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</link><guid isPermaLink="false">https://brunoluiz.net/2017/jul/still-using-gitflow-what-about-a-simpler-alternative/</guid><pubDate>Tue, 18 Jul 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg&quot;
+    href=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/35506/header.jpeg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1074,7 +1078,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 780px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1085,14 +1089,14 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Alternative on sight&quot;
         title=&quot;&quot;
-        src=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg&quot;
-        srcset=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/f39eb/header.jpeg 180w,
-/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/e1b9c/header.jpeg 360w,
-/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cfe7c/header.jpeg 720w,
-/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/deb56/header.jpeg 1080w,
-/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/cf22f/header.jpeg 1440w,
-/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/562c8/header.jpeg 2000w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/bef22/header.jpeg&quot;
+        srcset=&quot;/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/257c2/header.jpeg 195w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/d0630/header.jpeg 390w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/bef22/header.jpeg 780w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/1257c/header.jpeg 1170w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/731f5/header.jpeg 1560w,
+/static/1fa7f07e5b4b36dba90e9f44c0e2d5cd/35506/header.jpeg 2000w&quot;
+        sizes=&quot;(max-width: 780px) 100vw, 780px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -1230,7 +1234,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;The model is still being tested but, until now, it has been working well. The only faced drawbacks were the ones pointed on the session above.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Are you using git push force? Oh mate, you are doing it wrong!]]></title><description><![CDATA[You are developing some feature together with your team. Most likely you have done the usual dance: checkout a branch from the master or…]]></description><link>https://brunoluiz.net/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</link><guid isPermaLink="false">https://brunoluiz.net/2017/jun/are-you-using-git-push-force-oh-mate-you-are-doing-it-wrong/</guid><pubDate>Sat, 03 Jun 2017 19:44:37 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png&quot;
+    href=&quot;/static/620d3f100a056fc03663181b22d8cbbd/faf19/header.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1238,7 +1242,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 720px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 778px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1249,12 +1253,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Git branching&quot;
         title=&quot;&quot;
-        src=&quot;/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png&quot;
-        srcset=&quot;/static/620d3f100a056fc03663181b22d8cbbd/e6885/header.png 180w,
-/static/620d3f100a056fc03663181b22d8cbbd/e17e9/header.png 360w,
-/static/620d3f100a056fc03663181b22d8cbbd/5b758/header.png 720w,
-/static/620d3f100a056fc03663181b22d8cbbd/4132c/header.png 778w&quot;
-        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        src=&quot;/static/620d3f100a056fc03663181b22d8cbbd/faf19/header.png&quot;
+        srcset=&quot;/static/620d3f100a056fc03663181b22d8cbbd/d94ba/header.png 195w,
+/static/620d3f100a056fc03663181b22d8cbbd/bedd7/header.png 390w,
+/static/620d3f100a056fc03663181b22d8cbbd/faf19/header.png 778w&quot;
+        sizes=&quot;(max-width: 778px) 100vw, 778px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
